@@ -1,0 +1,28 @@
+extends layout
+
+block layout-content
+    .article.banner
+        if mainArticle.enclosure && mainArticle.enclosure.url
+            img.image(src=mainArticle.enclosure.url, alt=mainArticle.title, width="100")
+        .main-content
+            a.title(href=mainArticle.link target="_blank")= mainArticle.title
+            p.content #{mainArticle.content || mainArticle.contentSnippet || 'No description available.'}
+            p.date Published on: #{mainArticle.pubDate}
+            p.date Author: #{mainArticle.creator || 'Unknown'}
+    .news
+        div.main
+            each item in feed.items
+                .article
+                    if item.enclosure && item.enclosure.url
+                        img.image(src=item.enclosure.url, alt=item.title, width="100")
+                    a.title(href=item.link target="_blank")= item.title
+                    p.content #{item.content || item.contentSnippet || 'No description available.'}
+                    p.date Published on: #{item.pubDate}
+                    p.date Author: #{item.creator || 'Unknown'}
+        .sidebar
+            each segment in segments
+                .sidebar-content
+                    h2= segment.title
+                    each item in segment.items
+                        .sidebar-article
+                            a(href=item.link target="_blank")= item.title

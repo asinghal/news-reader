@@ -1,0 +1,29 @@
+{
+  "name": "news-reader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asinghal/news-reader.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/asinghal/news-reader/issues"
+  },
+  "homepage": "https://github.com/asinghal/news-reader#readme",
+  "dependencies": {
+    "cheerio": "^1.1.2",
+    "express": "^5.1.0",
+    "pug": "^3.0.3",
+    "rss-parser": "^3.13.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
