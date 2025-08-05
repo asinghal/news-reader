@@ -6,7 +6,7 @@ html
     link(rel="shortcut icon", href="/favicon.ico")
     meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
     meta(name="theme-color", content="#000000")
-    title News Reader | #{ feed.title }
+    title #{ feed.title } | News Reader
     link(rel="stylesheet" href="/styles.css")
     link(rel="preconnect" href="https://fonts.googleapis.com")
     link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
@@ -16,16 +16,21 @@ html
         .header
             div.main
                 a(href="/").site-title= title
-                ul.nav
-                    li
+                button.sidebar-toggle(onclick="toggleSidebar()") &#x2630;
+                ul.nav#sidebar
+                    li(class=(page === 'astrology' ? 'active' : ''))
+                        a(href="/astrology") Astrology
+                    li(class=(page === 'auto' ? 'active' : ''))
+                        a(href="/auto") Auto
+                    li(class=(page === 'business' ? 'active' : ''))
                         a(href="/business") Business
-                    li
+                    li(class=(page === 'entertainment' ? 'active' : ''))
                         a(href="/entertainment") Entertainment
-                    li
+                    li(class=(page === 'sports' ? 'active' : ''))
                         a(href="/sports") Sports
-                    li
+                    li(class=(page === 'tech' ? 'active' : ''))
                         a(href="/tech") Technology
-                    li
+                    li(class=(page === 'world' ? 'active' : ''))
                         a(href="/world") World
         block layout-content
         .footer
@@ -35,4 +40,17 @@ html
                     p.copyright= feed.copyright
                 else
                     p.copyright= "© 2023 News Reader. All rights reserved."
-    
+        div#overlay
+
+        script(type="text/javascript")
+            | function toggleSidebar() {
+            |   var sidebar = document.getElementById('sidebar');
+            |   var overlay = document.getElementById('overlay');
+            |   if (sidebar.style.display === 'flex') {
+            |     sidebar.style.display = 'none';
+            |     overlay.style.display = 'none';
+            |   } else {
+            |     sidebar.style.display = 'flex';
+            |     overlay.style.display = 'block';
+            |   }
+            | }

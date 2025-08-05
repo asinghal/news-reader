@@ -10,7 +10,7 @@ block layout-content
             p.date Published on: #{mainArticle.pubDate}
             p.date Author: #{mainArticle.creator || 'Unknown'}
     .news
-        div.main
+        div.main(class=(segments.length > 0 ? '' : 'wide'))
             each item in feed.items
                 .article
                     if item.enclosure && item.enclosure.url
