@@ -5,6 +5,7 @@ block layout-content
         if mainArticle.enclosure && mainArticle.enclosure.url
             img.image(src=mainArticle.enclosure.url, alt=mainArticle.title, width="100")
         .main-content
+            .label.primary Top Story
             a.title(href=mainArticle.link target="_blank")= mainArticle.title
             p.content #{mainArticle.content || mainArticle.contentSnippet || 'No description available.'}
             p.date Published on: #{mainArticle.pubDate}

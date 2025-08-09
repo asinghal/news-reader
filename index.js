@@ -16,7 +16,7 @@ const getSegment = async (url, title, expand = false) => {
 const getPrimary = async (url, expand = false) => {
   const feed = await fetchRSS(url, expand);
   const mainArticle = feed.items[0];
-  feed.items = feed.items.slice(1, 17);
+  feed.items = feed.items.slice(1, 37);
   const date = new Date().toLocaleDateString("en-GB");
   return { feed, mainArticle, date };
 }
@@ -29,13 +29,14 @@ async function renderSegment(res, url, page) {
 
 app.get('/', async (req, res) => {
   const { feed, mainArticle, date } = await getPrimary('https://timesofindia.indiatimes.com/rssfeedstopstories.cms', true);
+  const recent = await getSegment('http://timesofindia.indiatimes.com/rssfeedmostrecent.cms', 'Recent Articles');
   const mostRead = await getSegment('https://timesofindia.indiatimes.com/rssfeedmostread.cms', 'Most Read Articles');
   const business = await getSegment('https://timesofindia.indiatimes.com/rssfeeds/1898055.cms', 'Business');
   const tech = await getSegment('https://timesofindia.indiatimes.com/rssfeeds/66949542.cms', 'Technology');
   const world = await getSegment('https://timesofindia.indiatimes.com/rssfeeds/296589292.cms', 'World');
   const sports = await getSegment('https://timesofindia.indiatimes.com/rssfeeds/4719148.cms', 'Sports');
   const entertainment = await getSegment('https://timesofindia.indiatimes.com/rssfeeds/1081479906.cms', 'Entertainment');
-  const segments = [mostRead, business, tech, world, sports, entertainment];
+  const segments = [mostRead, business, tech, world, sports, entertainment, recent];
   res.render('index', { feed, mainArticle, title: 'The Times of India', date, segments, page: 'home' });
 })
 

@@ -1,5 +1,5 @@
 body {
-    font-family: 'Nata Sans', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     margin: 0;
     background-color: #fffefa;
     color: #333;
@@ -8,9 +8,8 @@ body {
 }
 
 .header {
-    padding: 1em;
-    background-color: #e21b22;
-    color: #fff;
+    padding: 1em 4em;
+    border-bottom: 1px solid #000;
     clear: both;
     display: flex;
     max-width: 100%;
@@ -71,7 +70,7 @@ body {
 }
 
 .header .nav li.active a {
-    border: 1px solid #fff;
+    border: 1px solid #000;
     padding: 0.5em 1em;
     border-radius: 5px;
 }
@@ -116,11 +115,6 @@ body {
     position: relative;
 }
 
-.article.banner {
-    margin: 0;
-    padding: 0;
-}
-
 .news .main.wide {
     width: 100%;
     max-width: 100%;
@@ -147,20 +141,21 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-    .banner .main-content {
-        position: absolute;
-        top: 4em;
-        left: 5em;
-        right: 0;
-        bottom: 0;
-        padding: 2em;
-        background-color: #000;
-        color: #fff;
-        opacity: 0.8;
+    .article.banner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1em 4em;
+        background-color: #f4f4f4;
         border-radius: 8px;
         margin: 1em 0;
-        max-width: 30em;
-        max-height: fit-content;
+    }
+    .article.banner .main-content {
+        max-width: 30%;
+        padding: 0 2em;
+    }
+    .article.banner img {
+        max-width: 70%;
     }
 }
 
@@ -226,9 +221,19 @@ body {
     }
 }
 
+.article .label {
+    border: 1px solid #e21b22;
+    margin-bottom: 1em;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    background-color: #e21b22;
+    color: #fff;
+    width: fit-content;
+}
+
 .article .title {
     color: inherit;
-    font-size: 1.5em;
+    font-size: 1.8em;
     font-weight: bold;
     margin-bottom: 1em;
     text-decoration: none;
