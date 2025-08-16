@@ -21,6 +21,31 @@ const parser = new Parser({
 //     return feed;
 // };
 
+function timeAgo(date) {
+  const now = new Date();
+  const seconds = Math.floor((now - date) / 1000);
+
+  let interval = Math.floor(seconds / 31536000);
+  if (interval >= 1) return interval + " year" + (interval > 1 ? "s" : "") + " ago";
+
+  interval = Math.floor(seconds / 2592000);
+  if (interval >= 1) return interval + " month" + (interval > 1 ? "s" : "") + " ago";
+
+  interval = Math.floor(seconds / 86400);
+  if (interval >= 1) return interval + " day" + (interval > 1 ? "s" : "") + " ago";
+
+  interval = Math.floor(seconds / 3600);
+  if (interval >= 1) return interval + " hour" + (interval > 1 ? "s" : "") + " ago";
+
+  interval = Math.floor(seconds / 60);
+  if (interval >= 15) return interval + " minute" + (interval > 1 ? "s" : "") + " ago";
+
+
+  return "Just now";
+}
+
+const labels = {'NEWS':'News', 'BUSINESS': 'Business', 'TECH': 'Technology', 'WORLD': 'World', 'SPORTS': 'Sports', 'ENTERTAINMENT': 'Entertainment', 'TNN': 'News', 'GLOBAL': 'World', 'ASTRO': 'Astrology' };
+
 const fetchRSS = async (url, expand = false) => {
 
     const feed = await parser.parseURL(url);
@@ -29,7 +54,34 @@ const fetchRSS = async (url, expand = false) => {
         if (item.enclosure && item.enclosure.$) {
             item.enclosure = item.enclosure.$;
         }
-        
+
+        if (item.enclosure && item.enclosure.url) {
+            fetch(item.enclosure.url, {
+                method: 'HEAD'
+            }).then(res => {
+                if (!res.ok) {
+                    console.error(`Error fetching enclosure for ${item.title}:`, res.statusText);
+                    item.enclosure = undefined;
+                    return;
+                }
+            }).catch(err => {
+                console.error(`Error fetching enclosure for ${item.title}:`, err);
+                item.enclosure = undefined;
+            });
+        }
+
+        if (item.pubDate) {
+            item.pubDate = timeAgo(new Date(item.pubDate));
+        }
+
+        if (item.creator) {
+            item.labels = Object.keys(labels).filter(label => item.creator.toUpperCase().includes(label)).map(label => labels[label]);
+        }
+
+        if (!item.labels || item.labels.length === 0) {
+            item.labels = ['News'];
+        }
+
         const content = item.content || item.contentSnippet || '';
         const $ = cheerio.load(`<div>${content}</div>`);
         item.content = $.text();

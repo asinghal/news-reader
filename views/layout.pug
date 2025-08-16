@@ -33,6 +33,12 @@ html
                     li(class=(page === 'world' ? 'active' : ''))
                         a(href="/world") World
         block layout-content
+        .catalogue
+            ul
+                for feed in Object.keys(rssFeeds)
+                    li 
+                        a.catalogue-item(href=`/${feed}`)= rssFeeds[feed].name
+
         .footer
             div
                 p= "Powered by News Reader using RSS feeds. Last updated: " + date

@@ -1,25 +1,32 @@
 extends layout
 
 block layout-content
+    //- .advertisement Placeholder for advertisement
     .article.banner
         if mainArticle.enclosure && mainArticle.enclosure.url
-            img.image(src=mainArticle.enclosure.url, alt=mainArticle.title, width="100")
+            .article-image
+                img.image(src=mainArticle.enclosure.url, alt=mainArticle.title, width="100")
         .main-content
             .label.primary Top Story
             a.title(href=mainArticle.link target="_blank")= mainArticle.title
             p.content #{mainArticle.content || mainArticle.contentSnippet || 'No description available.'}
-            p.date Published on: #{mainArticle.pubDate}
-            p.date Author: #{mainArticle.creator || 'Unknown'}
+            p.date #{mainArticle.creator || 'TOI'} | #{mainArticle.pubDate}
+    //- .advertisement Placeholder for advertisement
     .news
         div.main(class=(segments.length > 0 ? '' : 'wide'))
             each item in feed.items
                 .article
+                    .labels
+                        each label in item.labels
+                            .label.secondary #{label || 'News'}
+
                     if item.enclosure && item.enclosure.url
-                        img.image(src=item.enclosure.url, alt=item.title, width="100")
+                        .article-image
+                            img.image(src=item.enclosure.url, alt=item.title, width="100")
+                    
                     a.title(href=item.link target="_blank")= item.title
                     p.content #{item.content || item.contentSnippet || 'No description available.'}
-                    p.date Published on: #{item.pubDate}
-                    p.date Author: #{item.creator || 'Unknown'}
+                    p.date #{item.creator || 'TOI'} | #{item.pubDate}
         .sidebar
             each segment in segments
                 .sidebar-content
@@ -27,3 +34,4 @@ block layout-content
                     each item in segment.items
                         .sidebar-article
                             a(href=item.link target="_blank")= item.title
+                //- .advertisement Placeholder for advertisement
