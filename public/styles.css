@@ -9,9 +9,9 @@ body {
 
 .header {
     padding: 1em 4em;
-    background-color: #e21b22;
+    background-color: #B50000;
     color: #fff;
-    border-bottom: 1px solid #e21b22;
+    border-bottom: 1px solid #B50000;
     clear: both;
     display: flex;
     max-width: 100%;
@@ -22,10 +22,16 @@ body {
 
 .footer {
     padding: 1em 2em;
-    border-top: 10px solid #e21b22;
-    background-color: #000;
+    border-top: 1px solid #222;
+    background-color: #B50000;
     color: #ddd;
     clear: both;
+}
+
+.copyright {
+    margin-right: 1em;
+    padding-right: 1em;
+    border-right: 1px solid #ddd;
 }
 
 .header .image {
@@ -159,7 +165,7 @@ body {
 @media screen and (min-width: 768px) {
     .article.banner {
         padding: 1em 4em;
-        background-color: #000;
+        background-color: #B50000;
         color: #fff;
         margin: 0;
     }
@@ -267,8 +273,8 @@ body {
 
 .article .label.primary {
     padding: 0.5em 1em;
-    border: 1px solid #e21b22;
-    background-color: #e21b22;
+    border: 1px solid #B50000;
+    background-color: #B50000;
     color: #fff;
 }
 
@@ -282,7 +288,7 @@ body {
 }
 
 .article .title:hover {
-    color: #e21b22;
+    color: #B50000;
 }
 
 .article .content {
@@ -303,7 +309,7 @@ body {
 }
 
 .sidebar-content h2 {
-    border-left: 10px solid #e21b22;
+    border-left: 10px solid #B50000;
     padding-left: 1em;
     padding-bottom: 0.5em;
 }

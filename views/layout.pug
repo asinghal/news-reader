@@ -41,11 +41,11 @@ html
 
         .footer
             div
-                p= "Powered by News Reader using RSS feeds. Last updated: " + date
                 if feed.copyright
-                    p.copyright= feed.copyright
+                    span.copyright= feed.copyright
                 else
-                    p.copyright= "© 2023 News Reader. All rights reserved."
+                    span.copyright= "© 2023 News Reader. All rights reserved."
+                span= "Powered by News Reader using RSS feeds. Last updated: " + date
         div#overlay
 
         script(type="text/javascript")
