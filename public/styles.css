@@ -72,7 +72,7 @@ body {
 }
 
 .header .nav li.active a {
-    border: 1px solid #000;
+    border: 1px solid #fff;
     padding: 0.5em 1em;
     border-radius: 5px;
 }
@@ -158,9 +158,6 @@ body {
 
 @media screen and (min-width: 768px) {
     .article.banner {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         padding: 1em 4em;
         background-color: #000;
         color: #fff;
@@ -168,10 +165,16 @@ body {
     }
     .article.banner .main-content {
         max-width: 30%;
-        padding: 0 2em;
+        padding: 2em;
+        position: absolute;
+        bottom: 1.5em;
+        left: 5em;
+        background-color: #fff;
+        border: 1px solid #aaa;
+        color: #000;
     }
     .article.banner .article-image {
-        max-width: 70%;
+        width: 100%;
         background-color: #fff;
         padding: 0.5em;
     }
@@ -295,6 +298,8 @@ body {
 .article .image {
     width: 100%;
     margin-bottom: 1em;
+    border: 1px solid #eee;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar-content h2 {
