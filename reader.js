@@ -90,7 +90,7 @@ const fetchRSS = async (url, expand = false) => {
         if (!!expand && (!item.content || item.content.length < 20) && (!item.contentSnippet || item.contentSnippet.length < 20)) {
             const fetched = await fetch(item.link);
             const $ = cheerio.load(await fetched.text());
-            const content = $('.js_tbl_article').text();
+            const content = $('.js_tbl_article').text() || $('.articlebodycontent').text();
             const reduced = content.replaceAll('...', '').split('.').slice(0, 3).join('. ') + '.';
             item.content = reduced;
         }

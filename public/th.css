@@ -1,0 +1,38 @@
+body {
+    background-color: #B50000;
+}
+
+.header {
+    background-color: #B50000;
+    color: #fff;
+    border-bottom: 1px solid #B50000;
+}
+
+.footer {
+    background-color: #B50000;
+    color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+    .article.banner {
+        background-color: #B50000;
+        color: #fff;
+    }
+}
+
+.article .label.primary {
+    border: 1px solid #B50000;
+    background-color: #B50000;
+}
+
+.article .title:hover {
+    color: #B50000;
+}
+
+.sidebar-content h2 {
+    border-left: 10px solid #B50000;
+}
+
+.header .nav a:hover {
+    color: #dbb3b5;
+}

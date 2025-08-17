@@ -2,15 +2,16 @@ extends layout
 
 block layout-content
     //- .advertisement Placeholder for advertisement
-    .article.banner
-        if mainArticle.enclosure && mainArticle.enclosure.url
-            .article-image
-                img.image(src=mainArticle.enclosure.url, alt=mainArticle.title, width="100")
-        .main-content
-            .label.primary Top Story
-            a.title(href=mainArticle.link target="_blank")= mainArticle.title
-            p.content #{mainArticle.content || mainArticle.contentSnippet || 'No description available.'}
-            p.date #{mainArticle.creator || author} | #{mainArticle.pubDate}
+    if mainArticle
+        .article.banner
+            if mainArticle.enclosure && mainArticle.enclosure.url
+                .article-image
+                    img.image(src=mainArticle.enclosure.url, alt=mainArticle.title, width="100")
+            .main-content
+                .label.primary Top Story
+                a.title(href=mainArticle.link target="_blank")= mainArticle.title
+                p.content #{mainArticle.content || mainArticle.contentSnippet || 'No description available.'}
+                p.date #{mainArticle.creator || author} | #{mainArticle.pubDate}
     //- .advertisement Placeholder for advertisement
     .news
         div.main(class=(segments.length > 0 ? '' : 'wide'))

@@ -1,0 +1,38 @@
+body {
+    background-color: #011e29;
+}
+
+.header {
+    background-color: #011e29;
+    color: #fff;
+    border-bottom: 1px solid #011e29;
+}
+
+.footer {
+    background-color: #011e29;
+    color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+    .article.banner {
+        background-color: #011e29;
+        color: #fff;
+    }
+}
+
+.article .label.primary {
+    border: 1px solid #00b1cd;
+    background-color: #00b1cd;
+}
+
+.article .title:hover {
+    color: #00b1cd;
+}
+
+.sidebar-content h2 {
+    border-left: 10px solid #00b1cd;
+}
+
+.header .nav a:hover {
+    color: #00b1cd;
+}

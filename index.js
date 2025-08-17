@@ -11,8 +11,9 @@ app.use(express.static(path.join(__dirname, "public")));
 
 const toiRSSFeeds = require('./toi.json');
 const hinduRSSFeeds = require('./hindu.json');
+const htRSSFeeds = require('./ht.json');
 
-const sources = [toiRSSFeeds, hinduRSSFeeds];
+const sources = [toiRSSFeeds, hinduRSSFeeds, htRSSFeeds];
 
 const getSegment = async (url, title, expand = false) => {
   const feed = await fetchRSS(url, expand);
