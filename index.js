@@ -32,6 +32,7 @@ app.get('/', async (req, res) => {
     sources: sources.map(source => ({
       name: source.metadata.name,
       uri: source.metadata.rootURI,
+      logo: source.metadata.logo || '',
     }))
   });
 });
@@ -43,13 +44,13 @@ sources.forEach(source => {
   async function renderSegment(res, url, page) {
     const { feed, mainArticle, date } = await getPrimary(url, true);
     const segments = [];
-    const nav = Object.keys(rssFeeds).filter(key => !!rssFeeds[key].nav);
+    const nav = Object.keys(rssFeeds).filter(key => !!rssFeeds[key].nav).sort((a, b) => rssFeeds[a].name > rssFeeds[b].name ? 1 : -1);
     res.render('main', { feed, mainArticle, title: metadata.name, author: metadata.author, date, segments, page, rssFeeds, nav, uri: metadata.rootURI });
   }
 
   app.get(`/${metadata.rootURI}`, async (req, res) => {
     const { feed, mainArticle, date } = await getPrimary(rssFeeds.home.url, true);
-    const nav = Object.keys(rssFeeds).filter(key => !!rssFeeds[key].nav);
+    const nav = Object.keys(rssFeeds).filter(key => !!rssFeeds[key].nav).sort((a, b) => rssFeeds[a].name > rssFeeds[b].name ? 1 : -1);
     const segments = await Promise.all(Object.keys(rssFeeds).filter(key => !!rssFeeds[key].featured).map(async key => {
       return await getSegment(rssFeeds[key].url, rssFeeds[key].name);
     }));

@@ -5,7 +5,8 @@
     "author": "The Hindu Bureau",
     "description": "The Hindu is an Indian English-language daily newspaper owned by The Hindu Group. It is one of the oldest newspapers in India and is known for its comprehensive coverage of news and analysis.",
     "language": "en",
-    "rootURI": "th"
+    "rootURI": "th",
+    "logo": "https://www.thehindu.com/theme/images/th-online/thehindu-logo.svg"
   },
   "feeds": {
     "home": { "name": "Home", "url": "https://www.thehindu.com/feeder/default.rss" },

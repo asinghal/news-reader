@@ -11,9 +11,12 @@ html
     link(href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet")
   body
     div#root
-        h1 Select a news source
 
         ul
           for source in sources
-            li
-              a(href=`/${source.uri}`)= source.name
+            li(style="margin-bottom: 2em; list-style: none;")
+                if source.logo
+                    a(href=`/${source.uri}`)
+                        img(src=source.logo, alt=source.name, style="max-width: 100%; height: auto; margin: 0 auto; display: block;")
+                else
+                    a(href=`/${source.uri}`)= source.name
