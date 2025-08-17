@@ -10,16 +10,16 @@ const parser = new Parser({
     }
 });
 
-// const cache = {};
+const cache = {};
 
-// const getFeed = async (url) => {
-//     if (cache[url] && (Date.now() - cache[url].timestamp < 1000 * 60 * 30)) { // Cache for 30 minutes
-//         return new Promise(resolve => resolve(cache[url].feed));
-//     }
-//     const feed = await parser.parseURL(url);
-//     cache[url] = { feed, timestamp: Date.now() };
-//     return feed;
-// };
+const getFeed = async (url) => {
+    if (cache[url] && (Date.now() - cache[url].timestamp < 1000 * 60 * 15)) { // Cache for 15 minutes
+        return new Promise(resolve => resolve(cache[url].feed));
+    }
+    const feed = await parser.parseURL(url);
+    cache[url] = { feed, timestamp: Date.now() };
+    return new Promise(resolve => resolve(feed));
+};
 
 function timeAgo(date) {
   const now = new Date();
@@ -48,7 +48,8 @@ const labels = {'NEWS':'News', 'BUSINESS': 'Business', 'TECH': 'Technology', 'WO
 
 const fetchRSS = async (url, expand = false) => {
 
-    const feed = await parser.parseURL(url);
+    const _feed = await getFeed(url);
+    const feed = { ..._feed };
 
     await Promise.all(feed.items.map(async item => {
         if (item.enclosure && item.enclosure.$) {
