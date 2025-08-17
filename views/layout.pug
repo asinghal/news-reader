@@ -15,29 +15,21 @@ html
     div#root
         .header
             div.main
-                a(href="/").site-title= title
+                div
+                    a.site-title(href=`/`) &#x2302;&nbsp;
+                    a(href=`/${uri}`).site-title= title
                 button.sidebar-toggle(onclick="toggleSidebar()") &#x2630;
                 ul.nav#sidebar
-                    li(class=(page === 'astrology' ? 'active' : ''))
-                        a(href="/astrology") Astrology
-                    li(class=(page === 'auto' ? 'active' : ''))
-                        a(href="/auto") Auto
-                    li(class=(page === 'business' ? 'active' : ''))
-                        a(href="/business") Business
-                    li(class=(page === 'entertainment' ? 'active' : ''))
-                        a(href="/entertainment") Entertainment
-                    li(class=(page === 'sports' ? 'active' : ''))
-                        a(href="/sports") Sports
-                    li(class=(page === 'tech' ? 'active' : ''))
-                        a(href="/tech") Technology
-                    li(class=(page === 'world' ? 'active' : ''))
-                        a(href="/world") World
-        block layout-content
+                    for navItem in nav
+                        li(class=(page === navItem ? 'active' : ''))
+                            a(href=`/${uri}/${navItem}`)= rssFeeds[navItem].name
+        .container
+            block layout-content
         .catalogue
             ul
                 for feed in Object.keys(rssFeeds)
                     li 
-                        a.catalogue-item(href=`/${feed}`)= rssFeeds[feed].name
+                        a.catalogue-item(href=`/${uri}/${feed}`)= rssFeeds[feed].name
 
         .footer
             div
