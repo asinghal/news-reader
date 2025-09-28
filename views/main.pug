@@ -3,7 +3,7 @@ extends layout
 block layout-content
     //- .advertisement Placeholder for advertisement
     if mainArticle
-        .article.banner
+        .article.banner(class=(mainArticle.enclosure && mainArticle.enclosure.brightness ? mainArticle.enclosure.brightness : ''))
             if mainArticle.enclosure && mainArticle.enclosure.url
                 .article-image
                     img.image(src=mainArticle.enclosure.url, alt=mainArticle.title, width="100")

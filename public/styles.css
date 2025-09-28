@@ -164,7 +164,7 @@ body {
 }
 
 .news .main.wide .article-image .image {
-    max-height: 25em;
+    max-height: 35em;
 }
 
 .sidebar-toggle {
@@ -221,8 +221,16 @@ body {
         backdrop-filter: blur(10px);  /* The magic: frosted blur */
         -webkit-backdrop-filter: blur(10px); /* Safari support */
         border: 1px solid rgba(0, 0, 0, 0.05); /* Light border */
+        box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1); /* Soft shadow */
+    }
+
+    .article.banner.light .main-content {
+        color: #333;
+        background: rgba(255, 255, 255, 0.15); /* Transparent white */
+        border: 1px solid rgba(255, 255, 255, 0.05); /* Light border */
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
     }
+    
     .article.banner .article-image {
         width: 100%;
         background-color: #fff;
@@ -232,6 +240,9 @@ body {
     .article.banner .date {
         font-size: 0.8em;
         color: #e5e5e5;
+    }
+    .article.banner.light .date {
+        color: #333;
     }
 }
 

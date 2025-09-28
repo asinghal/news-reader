@@ -13,6 +13,7 @@ const toiRSSFeeds = require('./toi.json');
 const hinduRSSFeeds = require('./hindu.json');
 const htRSSFeeds = require('./ht.json');
 const ieRSSFeeds = require('./ie.json');
+const { getBrightness } = require('./images');
 
 const sources = [toiRSSFeeds, hinduRSSFeeds, htRSSFeeds, ieRSSFeeds];
 
@@ -49,6 +50,8 @@ sources.forEach(source => {
     const { feed, mainArticle, date } = await getPrimary(url, articleLocator, true);
     if (mainArticle && mainArticle.enclosure && mainArticle.enclosure.url) {
       images.push(mainArticle.enclosure.url);
+      const brightness = await getBrightness(mainArticle.enclosure.url);
+      mainArticle.enclosure.brightness = brightness;
     }
     const segments = [];
     const nav = Object.keys(rssFeeds).filter(key => !!rssFeeds[key].nav).sort((a, b) => rssFeeds[a].name > rssFeeds[b].name ? 1 : -1);
@@ -65,6 +68,8 @@ sources.forEach(source => {
     const { feed, mainArticle, date } = await getPrimary(rssFeeds.home.url, articleLocator, true);
     if (mainArticle && mainArticle.enclosure && mainArticle.enclosure.url) {
       images.push(mainArticle.enclosure.url);
+      const brightness = await getBrightness(mainArticle.enclosure.url);
+      mainArticle.enclosure.brightness = brightness;
     }
     const nav = Object.keys(rssFeeds).filter(key => !!rssFeeds[key].nav).sort((a, b) => rssFeeds[a].name > rssFeeds[b].name ? 1 : -1);
     const segments = await Promise.all(Object.keys(rssFeeds).filter(key => !!rssFeeds[key].featured).map(async key => {
@@ -80,7 +85,6 @@ sources.forEach(source => {
   })
 
   app.get('/location_specific_service', async (req, res) => {
-    console.log(req.ip)
     var fetch_res = await fetch(`https://ipapi.co/${req.ip}/json/`);
     var fetch_data = await fetch_res.json()
 
