@@ -32,6 +32,10 @@ body {
     color: #ff1204DD;
 }
 
+.article.dark .title:hover {
+    color: #dbb3b5;
+}
+
 .sidebar-content h2 {
     border-left: 10px solid #ff1204;
 }

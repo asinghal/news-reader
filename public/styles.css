@@ -78,7 +78,7 @@ body {
 .header .main .logo {
     padding: 0.5em 1.5em;
     margin: 0;
-    background: rgba(0, 0, 0, 0.15); /* Transparent white */
+    background: rgba(0, 0, 0, 0.25); /* Transparent white */
     backdrop-filter: blur(10px);  /* The magic: frosted blur */
     -webkit-backdrop-filter: blur(10px); /* Safari support */
     border: 1px solid rgba(0, 0, 0, 0.05); /* Light border */
@@ -93,7 +93,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background: rgba(0, 0, 0, 0.15); /* Transparent white */
+    background: rgba(0, 0, 0, 0.25); /* Transparent white */
     backdrop-filter: blur(10px);  /* The magic: frosted blur */
     -webkit-backdrop-filter: blur(10px); /* Safari support */
     border: 1px solid rgba(0, 0, 0, 0.05); /* Light border */
@@ -106,9 +106,13 @@ body {
 }
 
 .header .nav li.active a {
-    border: 1px solid #fff;
+    background: rgba(255, 255, 255, 0.15); /* Transparent white */
+    backdrop-filter: blur(10px);  /* The magic: frosted blur */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    border: 1px solid rgba(255, 255, 255, 0.05); /* Light border */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
     padding: 0.5em 1em;
-    border-radius: 5px;
+    border-radius: 16px;
 }
 
 .header .nav a {
@@ -229,7 +233,7 @@ body {
         bottom: 0.5em;
         left: 5em;
         color: #e5e5e5;
-        background: rgba(0, 0, 0, 0.15); /* Transparent white */
+        background: rgba(0, 0, 0, 0.4); /* Transparent black */
         backdrop-filter: blur(10px);  /* The magic: frosted blur */
         -webkit-backdrop-filter: blur(10px); /* Safari support */
         border: 1px solid rgba(0, 0, 0, 0.05); /* Light border */
@@ -238,7 +242,7 @@ body {
 
     .article.banner.light .main-content {
         color: #333;
-        background: rgba(255, 255, 255, 0.15); /* Transparent white */
+        background: rgba(255, 255, 255, 0.4); /* Transparent white */
         border: 1px solid rgba(255, 255, 255, 0.05); /* Light border */
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
     }
