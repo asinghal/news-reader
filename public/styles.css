@@ -150,6 +150,11 @@ body {
     position: relative;
 }
 
+.news .main.wide {
+    width: 100%;
+    max-width: 100%;
+}
+
 .news .article-image .image {
     object-fit: contain;
     width: 100%;
@@ -158,9 +163,8 @@ body {
     max-height: 17em;
 }
 
-.news .main.wide {
-    width: 100%;
-    max-width: 100%;
+.news .main.wide .article-image .image {
+    max-height: 25em;
 }
 
 .sidebar-toggle {
@@ -193,10 +197,14 @@ body {
         margin: 0 -3em;
     }
 
+    .news .main {
+        grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+    }
+
     .article.banner {
         border: none;
         box-shadow: none;
-        padding: 1em 4em;
+        padding: 0;
         background-color: #B50000;
         color: #fff;
         margin: 0;
@@ -206,21 +214,24 @@ body {
         max-width: 30%;
         padding: 2em;
         position: absolute;
-        bottom: 1.5em;
+        bottom: 0.5em;
         left: 5em;
-        background-color: #fff;
-        border: 1px solid #ddd;
-        color: #000;
+        color: #e5e5e5;
+        background: rgba(0, 0, 0, 0.15); /* Transparent white */
+        backdrop-filter: blur(10px);  /* The magic: frosted blur */
+        -webkit-backdrop-filter: blur(10px); /* Safari support */
+        border: 1px solid rgba(0, 0, 0, 0.05); /* Light border */
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
     }
     .article.banner .article-image {
         width: 100%;
         background-color: #fff;
-        padding: 0.5em;
+        padding: 0;
         margin: auto;
     }
     .article.banner .date {
         font-size: 0.8em;
-        color: gray;
+        color: #e5e5e5;
     }
 }
 
