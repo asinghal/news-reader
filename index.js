@@ -25,7 +25,9 @@ const getSegment = async (url, title, articleLocator, expand = false) => {
 const getPrimary = async (url, articleLocator, expand = false) => {
   const feed = await fetchRSS(url, articleLocator, expand);
   const mainArticle = feed.items[0];
-  feed.items = feed.items.slice(1, 37);
+  const count = feed.items.length;
+  const optimumCount = count - (count % 6);
+  feed.items = feed.items.slice(1, optimumCount + 1);
   const date = new Date().toLocaleDateString("en-GB");
   return { feed, mainArticle, date };
 }
