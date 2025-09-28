@@ -28,6 +28,10 @@ body {
     box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1); /* Soft shadow */
 }
 
+.header .main.dark {
+    color: #333;
+}
+
 .container {
     /* background-color: #fffefa; */
     background-color: rgb(252 243 237);

@@ -22,7 +22,7 @@ html
   body
     div#root
         .header
-            div.main
+            div.main#header
                 div.logo
                     a.site-title(href=`/`) &#x2302;&nbsp;
                     a(href=`/${uri}`).site-title= title
@@ -60,3 +60,34 @@ html
             |     overlay.style.display = 'block';
             |   }
             | }
+
+        script.
+            function getBrightnessFromElement(el) {
+                const color = window.getComputedStyle(el).backgroundColor;
+                const match = color.match(/\d+/g);
+                if (!match) return 255;
+                const [r, g, b] = match.map(Number);
+                return 0.299 * r + 0.587 * g + 0.114 * b;
+            }
+
+            function updateNavColor() {
+                const nav = document.getElementById("header");
+                if (!nav) return;
+
+                // Sample a point just below the nav
+                const el = document.elementFromPoint(nav.offsetLeft + 10, nav.offsetHeight + 10);
+                if (!el) return;
+
+                const brightness = getBrightnessFromElement(el);
+                if (brightness < 128) {
+                    nav.classList.add("light");
+                    nav.classList.remove("dark");
+                } else {
+                    nav.classList.add("dark");
+                    nav.classList.remove("light");
+                }
+            }
+
+            window.addEventListener("scroll", updateNavColor);
+            window.addEventListener("resize", updateNavColor);
+            window.addEventListener("load", updateNavColor);
