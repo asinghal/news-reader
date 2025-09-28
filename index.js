@@ -2,7 +2,7 @@ const express = require('express')
 const path = require("path");
 const { fetchRSS } = require('./reader')
 const app = express()
-const port = 3000
+const port = process.env.PORT || 3000
 
 app.set('view engine', 'pug');
 app.set('views', './views');
@@ -12,16 +12,17 @@ app.use(express.static(path.join(__dirname, "public")));
 const toiRSSFeeds = require('./toi.json');
 const hinduRSSFeeds = require('./hindu.json');
 const htRSSFeeds = require('./ht.json');
+const ieRSSFeeds = require('./ie.json');
 
-const sources = [toiRSSFeeds, hinduRSSFeeds, htRSSFeeds];
+const sources = [toiRSSFeeds, hinduRSSFeeds, htRSSFeeds, ieRSSFeeds];
 
-const getSegment = async (url, title, expand = false) => {
-  const feed = await fetchRSS(url, expand);
+const getSegment = async (url, title, articleLocator, expand = false) => {
+  const feed = await fetchRSS(url, articleLocator, expand);
   return { title, items: feed.items.slice(0, 10) };
 }
 
-const getPrimary = async (url, expand = false) => {
-  const feed = await fetchRSS(url, expand);
+const getPrimary = async (url, articleLocator, expand = false) => {
+  const feed = await fetchRSS(url, articleLocator, expand);
   const mainArticle = feed.items[0];
   feed.items = feed.items.slice(1, 37);
   const date = new Date().toLocaleDateString("en-GB");
@@ -41,21 +42,41 @@ app.get('/', async (req, res) => {
 sources.forEach(source => {
   const metadata = source.metadata;
   const rssFeeds = source.feeds;
+  const articleLocator = metadata.articleLocator || '.js_tbl_article';
 
   async function renderSegment(res, url, page) {
-    const { feed, mainArticle, date } = await getPrimary(url, true);
+    const images = [];
+    const { feed, mainArticle, date } = await getPrimary(url, articleLocator, true);
+    if (mainArticle && mainArticle.enclosure && mainArticle.enclosure.url) {
+      images.push(mainArticle.enclosure.url);
+    }
     const segments = [];
     const nav = Object.keys(rssFeeds).filter(key => !!rssFeeds[key].nav).sort((a, b) => rssFeeds[a].name > rssFeeds[b].name ? 1 : -1);
-    res.render('main', { feed, mainArticle, title: metadata.name, author: metadata.author, date, segments, page, rssFeeds, nav, uri: metadata.rootURI });
+    if (feed.items && feed.items.length > 0) {
+      const _images = feed.items.map(item => item.enclosure && item.enclosure.url).filter(Boolean);
+      images.push(..._images);
+    }
+
+    res.render('main', { feed, mainArticle, title: metadata.name, author: metadata.author, date, segments, page, rssFeeds, nav, uri: metadata.rootURI, images });
   }
 
   app.get(`/${metadata.rootURI}`, async (req, res) => {
-    const { feed, mainArticle, date } = await getPrimary(rssFeeds.home.url, true);
+    const images = [];
+    const { feed, mainArticle, date } = await getPrimary(rssFeeds.home.url, articleLocator, true);
+    if (mainArticle && mainArticle.enclosure && mainArticle.enclosure.url) {
+      images.push(mainArticle.enclosure.url);
+    }
     const nav = Object.keys(rssFeeds).filter(key => !!rssFeeds[key].nav).sort((a, b) => rssFeeds[a].name > rssFeeds[b].name ? 1 : -1);
     const segments = await Promise.all(Object.keys(rssFeeds).filter(key => !!rssFeeds[key].featured).map(async key => {
-      return await getSegment(rssFeeds[key].url, rssFeeds[key].name);
+      return await getSegment(rssFeeds[key].url, rssFeeds[key].name, articleLocator);
     }));
-    res.render('main', { feed, mainArticle, title: metadata.name, author: metadata.author, date, segments, page: 'home', rssFeeds, nav, uri: metadata.rootURI });
+
+    if (feed.items && feed.items.length > 0) {
+      const _images = feed.items.map(item => item.enclosure && item.enclosure.url).filter(Boolean);
+      images.push(..._images);
+    }
+
+    res.render('main', { feed, mainArticle, title: metadata.name, author: metadata.author, date, segments, page: 'home', rssFeeds, nav, uri: metadata.rootURI, images });
   })
 
   app.get('/location_specific_service', async (req, res) => {

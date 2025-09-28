@@ -1,0 +1,43 @@
+body {
+    background-color: #282e47;
+}
+
+.header {
+    background-color: #ff1204;
+    color: #fff;
+    border-bottom: 1px solid #ff1204;
+}
+
+.container {
+    background-color: #f9f7f2;
+    color: #282e47;
+}
+
+.footer {
+    background-color: #ff1204;
+    color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+    .article.banner {
+        background-color: #282e47;
+        color: #fff;
+    }
+}
+
+.article .label.primary {
+    border: 1px solid #ff1204;
+    background-color: #ff1204;
+}
+
+.article .title:hover {
+    color: #ff1204;
+}
+
+.sidebar-content h2 {
+    border-left: 10px solid #ff1204;
+}
+
+.header .nav a:hover {
+    color: #dbb3b5;
+}

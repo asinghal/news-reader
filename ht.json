@@ -7,7 +7,7 @@
     "language": "en",
     "rootURI": "ht",
     "logo": "https://www.hindustantimes.com/static-content/1y/ht/ht_100_logoblack@2x.webp",
-    "color": "#00b1cd"
+    "articleLocator": ".storyDetails"
   },
   "feeds": {
     "home": { "name": "Home", "url": "https://www.hindustantimes.com/feeds/rss/latest/rssfeed.xml" },

@@ -26,7 +26,8 @@ body {
 }
 
 .container {
-    background-color: #fffefa;
+    /* background-color: #fffefa; */
+    background-color: rgb(252 243 237);
     max-width: 100%;
     width: 100%;
     margin: 4em auto 0 auto;
@@ -137,12 +138,12 @@ body {
 .sidebar-content {
     padding: 2em;
     margin: 1em 0;
-    border-left: 10px solid #f4f4f4;
     text-align: left;
 }
 
 .article {
     border-bottom: 1px solid #e9ecef;
+    background-color: #fff;
     margin: 20px auto;
     padding: 3em;
     margin: 1em;
