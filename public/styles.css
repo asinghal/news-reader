@@ -257,10 +257,6 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    body {
-        padding: 1em;
-    }
-
     .container {
         margin-top: 8em;
     }
