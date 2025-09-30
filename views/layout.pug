@@ -36,7 +36,7 @@ html
         .catalogue
             ul
                 for feed in Object.keys(rssFeeds)
-                    li 
+                    li
                         a.catalogue-item(href=`/${uri}/${feed}`)= rssFeeds[feed].name
 
         .footer
@@ -66,7 +66,10 @@ html
                 const color = window.getComputedStyle(el).backgroundColor;
                 const match = color.match(/\d+/g);
                 if (!match) return 255;
-                const [r, g, b] = match.map(Number);
+                const [r, g, b, a] = match.map(Number);
+                if (!r && !g && !b && !a && !!el.parentElement && el.tagName !== "IMG") {
+                  return getBrightnessFromElement(el.parentElement);
+                }
                 return 0.299 * r + 0.587 * g + 0.114 * b;
             }
 

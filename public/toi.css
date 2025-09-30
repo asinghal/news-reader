@@ -1,30 +1,26 @@
-body {
-    background-color: #971111;
-}
-
 .header {
     color: #fff;
 }
 
 .footer {
-    background-color: #B50000;
+    background-color: #b50000;
     color: #fff;
 }
 
 @media screen and (min-width: 768px) {
     .article.banner {
-        background-color: #B50000;
+        background-color: #b50000;
         color: #fff;
     }
 }
 
 .article .label.primary {
-    border: 1px solid #B50000;
-    background-color: #B50000;
+    border: 1px solid #b50000;
+    background-color: #b50000;
 }
 
 .article .title:hover {
-    color: #B50000BB;
+    color: #b50000bb;
 }
 
 .article.dark .title:hover {
@@ -32,7 +28,7 @@ body {
 }
 
 .sidebar-content h2 {
-    border-left: 10px solid #B50000;
+    border-left: 10px solid #b50000;
 }
 
 .header .nav a:hover {
