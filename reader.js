@@ -101,12 +101,8 @@ const fetchRSS = async (url, articleLocator, expand = false) => {
             });
         }
 
-        if (item.pubDate) {
-            console.log('Original pubDate:', item.pubDate);
-            if (isAbsoluteDateString(item.pubDate)) {
-                item.pubDate = timeAgo(new Date(item.pubDate));
-                console.log('Converted pubDate:', item.pubDate);
-            }
+        if (item.pubDate && isAbsoluteDateString(item.pubDate)) {
+            item.pubDate = timeAgo(new Date(item.pubDate));
         }
 
         if (item.creator) {

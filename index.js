@@ -62,7 +62,7 @@ sources.forEach(source => {
       images.push(..._images);
     }
 
-    res.render('main', { feed, mainArticle, title: metadata.name, author: metadata.author, date, segments, page, rssFeeds, nav, uri: metadata.rootURI, images });
+    res.render('main', { feed, mainArticle, title: metadata.name, favicon: metadata.favicon, author: metadata.author, date, segments, page, rssFeeds, nav, uri: metadata.rootURI, images });
   }
 
   app.get(`/${metadata.rootURI}`, async (req, res) => {
@@ -83,7 +83,7 @@ sources.forEach(source => {
       images.push(..._images);
     }
 
-    res.render('main', { feed, mainArticle, title: metadata.name, author: metadata.author, date, segments, page: 'home', rssFeeds, nav, uri: metadata.rootURI, images });
+    res.render('main', { feed, mainArticle, title: metadata.name, favicon: metadata.favicon, author: metadata.author, date, segments, page: 'home', rssFeeds, nav, uri: metadata.rootURI, images });
   })
 
   app.get('/location_specific_service', async (req, res) => {

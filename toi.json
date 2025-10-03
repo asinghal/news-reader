@@ -7,7 +7,8 @@
     "language": "en",
     "rootURI": "toi",
     "logo": "https://static.toiimg.com/photo/79638690.cms",
-    "articleLocator": ".js_tbl_article"
+    "articleLocator": ".js_tbl_article",
+    "favicon": "https://timesofindia.indiatimes.com/icons/toifavicon.ico"
   },
   "feeds": {
     "home": { "name": "Home", "url": "https://timesofindia.indiatimes.com/rssfeedstopstories.cms" },

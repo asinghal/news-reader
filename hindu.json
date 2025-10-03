@@ -7,7 +7,8 @@
     "language": "en",
     "rootURI": "th",
     "logo": "https://www.thehindu.com/theme/images/th-online/thehindu-logo.svg",
-    "articleLocator": ".articlebodycontent"
+    "articleLocator": ".articlebodycontent",
+    "favicon": "https://www.thehindu.com/favicon.ico"
   },
   "feeds": {
     "home": { "name": "Home", "url": "https://www.thehindu.com/feeder/default.rss" },
