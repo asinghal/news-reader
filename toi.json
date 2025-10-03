@@ -12,7 +12,7 @@
   "feeds": {
     "home": { "name": "Home", "url": "https://timesofindia.indiatimes.com/rssfeedstopstories.cms" },
     "business": { "name": "Business", "featured": true, "nav": true, "url": "https://timesofindia.indiatimes.com/rssfeeds/1898055.cms" },
-    "tech": { "name": "Technology", "featured": true, "nav": true, "url": "https://timesofindia.indiatimes.com/rssfeeds/66949542.cms" },
+    "tech": { "name": "Technology", "featured": true, "url": "https://timesofindia.indiatimes.com/rssfeeds/66949542.cms" },
     "world": { "name": "World", "featured": true, "nav": true, "url": "https://timesofindia.indiatimes.com/rssfeeds/296589292.cms" },
     "sports": { "name": "Sports", "featured": true, "nav": true, "url": "https://timesofindia.indiatimes.com/rssfeeds/4719148.cms" },
     "entertainment": { "name": "Entertainment", "featured": true, "nav": true, "url": "https://timesofindia.indiatimes.com/rssfeeds/1081479906.cms" },
@@ -20,7 +20,7 @@
     "astrology": { "name": "Astrology", "nav": true, "url": "https://timesofindia.indiatimes.com/rssfeeds/65857041.cms" },
     "recent": { "name": "Recent Articles", "featured": true, "url": "http://timesofindia.indiatimes.com/rssfeedmostrecent.cms" },
     "mostRead": { "name": "Most Read Articles", "featured": true, "url": "https://timesofindia.indiatimes.com/rssfeedmostread.cms" },
-    "india": { "name": "India", "url": "http://timesofindia.indiatimes.com/rssfeeds/-2128936835.cms" },
+    "india": { "name": "India", "nav": true, "url": "http://timesofindia.indiatimes.com/rssfeeds/-2128936835.cms" },
     "us": { "name": "US", "url": "http://timesofindia.indiatimes.com/rssfeeds/30359486.cms" },
     "nri": { "name": "NRI", "url": "http://timesofindia.indiatimes.com/rssfeeds/7098551.cms" },
     "cricket": { "name": "Cricket", "url": "http://timesofindia.indiatimes.com/rssfeeds/54829575.cms" },

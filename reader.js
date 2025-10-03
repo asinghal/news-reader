@@ -52,6 +52,28 @@ function timeAgo(date) {
   return "Just now";
 }
 
+/**
+ * Checks if the input string is an absolute date string (e.g., 2025-10-02T23:45:05+05:30, or 2025-10-02)
+ * rather than a relative time string (e.g., 16 hours ago).
+ *
+ * @param {string} value The incoming date/time string from the RSS feed.
+ * @returns {boolean} True if it looks like an absolute date, false otherwise.
+ */
+function isAbsoluteDateString(value) {
+    if (typeof value !== 'string') {
+        return false;
+    }
+
+    // Regex Explanation:
+    // 1. \d{4}-\d{2}-\d{2} -> Matches YYYY-MM-DD (covers ISO and Date-Only)
+    // OR
+    // 2. \d{2}\s[A-Za-z]{3}\s\d{4} -> Matches DD Mon YYYY (e.g., 03 Oct 2025 - covers RFC 2822)
+    // OR
+    // 3. (GMT|UTC|Z|[+-]\d{2}:?\d{2}) -> Matches common Time Zone abbreviations/offsets
+    const dateRegex = /(\d{4}-\d{2}-\d{2})|(\d{2}\s[A-Za-z]{3}\s\d{4})|(GMT|UTC|Z|[+-]\d{2}:?\d{2})/i;
+    return dateRegex.test(value);
+}
+
 const labels = {'NEWS':'News', 'BUSINESS': 'Business', 'TECH': 'Technology', 'WORLD': 'World', 'SPORTS': 'Sports', 'ENTERTAINMENT': 'Entertainment', 'TNN': 'News', 'GLOBAL': 'World', 'ASTRO': 'Astrology' };
 
 const fetchRSS = async (url, articleLocator, expand = false) => {
@@ -80,7 +102,11 @@ const fetchRSS = async (url, articleLocator, expand = false) => {
         }
 
         if (item.pubDate) {
-            item.pubDate = timeAgo(new Date(item.pubDate));
+            console.log('Original pubDate:', item.pubDate);
+            if (isAbsoluteDateString(item.pubDate)) {
+                item.pubDate = timeAgo(new Date(item.pubDate));
+                console.log('Converted pubDate:', item.pubDate);
+            }
         }
 
         if (item.creator) {
