@@ -257,7 +257,7 @@ body {
 
 @media screen and (max-width: 768px) {
     .container {
-        margin-top: 8em;
+        margin-top: 6em;
     }
 
     .article.banner .main-content {
@@ -327,6 +327,11 @@ body {
     .article {
         margin: 0.5em;
         padding: 1em;
+    }
+
+    .article .article-image {
+        margin-left: -1.5em;
+        width: calc(100% + 3em);
     }
 
     .catalogue {
