@@ -6,7 +6,7 @@ block layout-content
         .article.banner(class=(mainArticle.enclosure && mainArticle.enclosure.brightness ? mainArticle.enclosure.brightness : ''))
             if mainArticle.enclosure && mainArticle.enclosure.url
                 .article-image
-                    img.image(src=mainArticle.enclosure.url, alt=mainArticle.title, width="100")
+                    img.image(src=mainArticle.enclosure.url, alt=mainArticle.title, width="100", class="banner-image")
             .main-content
                 .label.primary Top Story
                 a.title(href=mainArticle.link target="_blank")= mainArticle.title

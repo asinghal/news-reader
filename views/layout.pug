@@ -69,7 +69,7 @@ html
                 const match = color.match(/\d+/g);
                 if (!match) return 255;
                 const [r, g, b, a] = match.map(Number);
-                if (!r && !g && !b && !a && !!el.parentElement && el.tagName !== "IMG") {
+                if (!r && !g && !b && !a && !!el.parentElement && (el.tagName !== "IMG" || el.classList.contains("banner-image"))) {
                   return getBrightnessFromElement(el.parentElement);
                 }
                 return 0.299 * r + 0.587 * g + 0.114 * b;
