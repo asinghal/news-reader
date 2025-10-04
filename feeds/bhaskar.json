@@ -1,0 +1,149 @@
+{
+  "metadata": {
+    "name": "दैनिक भास्कर",
+    "url": "https://www.bhaskar.com/",
+    "author": "DB",
+    "description": "Dainik Bhaskar (दैनिक भास्कर) Hindi News Samachar - Find all Hindi News and Samachar, News in Hindi, Hindi News Headlines and Daily Breaking Hindi News Today and Updated From Bhaskar.com",
+    "language": "hi",
+    "rootURI": "db",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/3/37/Dainik_Bhaskar_Logo.svg",
+    "articleLocator": ".js_tbl_article",
+    "favicon": "https://www.bhaskar.com/favicon.ico"
+  },
+  "feeds": {
+    "home": {
+      "name": "मुख्य समाचार",
+      "url": "https://www.bhaskar.com/rss-v1--category-4587.xml"
+    },
+    "business": {
+      "name": "व्यापार",
+      "featured": true,
+      "nav": true,
+      "url": "https://www.bhaskar.com/rss-v1--category-1051.xml"
+    },
+    "magazine": {
+      "name": "मैगजीन",
+      "featured": true,
+      "url": "https://www.bhaskar.com/rss-v1--category-1057.xml"
+    },
+    "international": {
+      "name": "विदेश",
+      "featured": true,
+      "nav": true,
+      "url": "https://www.bhaskar.com/rss-v1--category-1125.xml"
+    },
+    "sports": {
+      "name": "खेल",
+      "featured": true,
+      "nav": true,
+      "url": "https://www.bhaskar.com/rss-v1--category-1053.xml"
+    },
+    "entertainment": {
+      "name": "मनोरंजन",
+      "featured": true,
+      "nav": true,
+      "url": "https://www.bhaskar.com/rss-v1--category-3998.xml"
+    },
+    "auto": {
+      "name": "वाहन",
+      "nav": true,
+      "url": "https://www.bhaskar.com/rss-v1--category-10711.xml"
+    },
+    "jeevan-mantra": {
+      "name": "जीवन मंत्र",
+      "nav": true,
+      "url": "https://www.bhaskar.com/rss-v1--category-3379.xml"
+    },
+    "fake-news-expose": {
+      "name": "झूठ का खुलासा",
+      "featured": true,
+      "url": "https://www.bhaskar.com/rss-v1--category-10891.xml"
+    },
+    "national": {
+      "name": "स्वदेश",
+      "nav": true,
+      "url": "https://www.bhaskar.com/rss-v1--category-1061.xml"
+    },
+    "utility": {
+      "name": "यूटिलिटी",
+      "url": "https://www.bhaskar.com/rss-v1--category-11616.xml"
+    },
+    "happy-life": {
+      "name": "लाइफ - साइंस",
+      "url": "https://www.bhaskar.com/rss-v1--category-7911.xml"
+    },
+    "tech-auto": {
+      "name": "टेक - ऑटो",
+      "url": "https://www.bhaskar.com/rss-v1--category-5707.xml"
+    },
+    "women": {
+      "name": "स्त्री",
+      "url": "https://www.bhaskar.com/rss-v1--category-1532.xml"
+    },
+    "jobs": {
+      "name": "रोज़गार",
+      "url": "https://www.bhaskar.com/rss-v1--category-11945.xml"
+    },
+    "bollywood": {
+      "name": "बॉलीवुड",
+      "url": "https://www.bhaskar.com/rss-v1--category-11215.xml"
+    },
+    "opinion": {
+      "name": "विचार",
+      "featured": true,
+      "url": "https://www.bhaskar.com/rss-v1--category-1944.xml"
+    },
+    "himachal": {
+      "name": "हिमाचल",
+      "url": "https://www.bhaskar.com/rss-v1--category-12084.xml"
+    },
+    "chandigarh": {
+      "name": "चंडीगढ़",
+      "url": "https://www.bhaskar.com/rss-v1--category-11649.xml"
+    },
+    "gujarat": {
+      "name": "गुजरात",
+      "url": "https://www.bhaskar.com/rss-v1--category-2314.xml"
+    },
+    "punjab": {
+      "name": "पंजाब",
+      "url": "https://www.bhaskar.com/rss-v1--category-1743.xml"
+    },
+    "jharkhand": {
+      "name": "झारखंड",
+      "url": "https://www.bhaskar.com/rss-v1--category-3682.xml"
+    },
+    "maharashtra": {
+      "name": "महाराष्ट्र",
+      "url": "https://www.bhaskar.com/rss-v1--category-2318.xml"
+    },
+    "new_delhi": {
+      "name": "नई दिल्ली",
+      "url": "https://www.bhaskar.com/rss-v1--category-7140.xml"
+    },
+    "haryana": {
+      "name": "हरियाणा",
+      "url": "https://www.bhaskar.com/rss-v1--category-1742.xml"
+    },
+    "chhattisgarh": {
+      "name": "छत्तीसगढ़",
+      "url": "https://www.bhaskar.com/rss-v1--category-1741.xml"
+    },
+    "bihar": {
+      "name": "बिहार",
+      "url": "https://www.bhaskar.com/rss-v1--category-3679.xml"
+    },
+    "uttar_pradesh": {
+      "name": "उत्तरप्रदेश",
+      "url": "https://www.bhaskar.com/rss-v1--category-2052.xml"
+    },
+    "madhya_pradesh": {
+      "name": "मध्य प्रदेश",
+      "url": "https://www.bhaskar.com/rss-v1--category-1739.xml"
+    },
+    "rajasthan": {
+      "name": "राजस्थान",
+      "url": "https://www.bhaskar.com/rss-v1--category-1740.xml"
+    }
+  }
+}
