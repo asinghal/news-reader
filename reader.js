@@ -12,6 +12,7 @@ const languages = jsonFiles
   .reduce((acc, curr) => ({ ...acc, ...curr }), {});
 
 const parser = new Parser({
+  defaultRSS: 2.0,
   customFields: {
     item: [
       ["media:thumbnail", "enclosure"],

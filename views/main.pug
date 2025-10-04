@@ -8,7 +8,7 @@ block layout-content
                 .article-image
                     img.image(src=mainArticle.enclosure.url, alt=mainArticle.title, width="100", class="banner-image")
             .main-content
-                .label.primary Top Story
+                .label.primary=translations.top_story
                 a.title(href=mainArticle.link target="_blank")= mainArticle.title
                 p.content #{mainArticle.content || mainArticle.contentSnippet || 'No description available.'}
                 p.date #{mainArticle.creator || author} | #{mainArticle.pubDate}
@@ -24,7 +24,7 @@ block layout-content
                     if item.enclosure && item.enclosure.url
                         .article-image
                             img.image(src=item.enclosure.url, alt=item.title, width="100")
-                    
+
                     a.title(href=item.link target="_blank")= item.title
                     p.content #{item.content || item.contentSnippet || 'No description available.'}
                     p.date #{item.creator || author} | #{item.pubDate}

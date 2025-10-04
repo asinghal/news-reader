@@ -1,0 +1,1089 @@
+{
+  "metadata": {
+    "name": "अमर उजाला",
+    "url": "https://www.amarujala.com/",
+    "author": "अमर उजाला",
+    "description": "Dainik Bhaskar (दैनिक भास्कर) Hindi News Samachar - Find all Hindi News and Samachar, News in Hindi, Hindi News Headlines and Daily Breaking Hindi News Today and Updated From Bhaskar.com",
+    "language": "hi",
+    "rootURI": "aj",
+    "logo": "data:image/png;base64,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",
+    "articleLocator": ".js_tbl_article",
+    "favicon": "https://www.bhaskar.com/favicon.ico"
+  },
+  "feeds": {
+    "home": {
+      "name": "मुख्य समाचार",
+      "url": "https://www.amarujala.com/rss/breaking-news.xml"
+    },
+    "editors-pick": {
+      "name": "समाचार",
+      "featured": true,
+      "nav": true,
+      "url": "https://www.amarujala.com/rss/editors-pick.xml"
+    },
+    "utility": {
+      "name": "यूटिलिटी",
+      "featured": true,
+      "nav": true,
+      "url": "https://www.amarujala.com/rss/utility.xml"
+    },
+    "real-estate": {
+      "name": "ज़मीन-जायदाद",
+      "featured": true,
+      "nav": true,
+      "url": "https://www.amarujala.com/rss/real-estate.xml"
+    },
+    "uttar-pradesh": {
+      "name": "Uttar Pradesh",
+      "url": "https://www.amarujala.com/rss/uttar-pradesh.xml"
+    },
+    "uttarakhand": {
+      "name": "Uttarakhand",
+      "url": "https://www.amarujala.com/rss/uttarakhand.xml"
+    },
+    "chhattisgarh": {
+      "name": "Chhattisgarh",
+      "url": "https://www.amarujala.com/rss/chhattisgarh.xml"
+    },
+    "jammu-and-kashmir": {
+      "name": "Jammu And Kashmir",
+      "url": "https://www.amarujala.com/rss/jammu-and-kashmir.xml"
+    },
+    "jharkhand": {
+      "name": "Jharkhand",
+      "url": "https://www.amarujala.com/rss/jharkhand.xml"
+    },
+    "delhi": {
+      "name": "Delhi",
+      "url": "https://www.amarujala.com/rss/delhi.xml"
+    },
+    "punjab": {
+      "name": "Punjab",
+      "url": "https://www.amarujala.com/rss/punjab.xml"
+    },
+    "west-bengal": {
+      "name": "West Bengal",
+      "url": "https://www.amarujala.com/rss/west-bengal.xml"
+    },
+    "bihar": {
+      "name": "Bihar",
+      "url": "https://www.amarujala.com/rss/bihar.xml"
+    },
+    "madhya-pradesh": {
+      "name": "Madhya Pradesh",
+      "url": "https://www.amarujala.com/rss/madhya-pradesh.xml"
+    },
+    "maharashtra": {
+      "name": "Maharashtra",
+      "url": "https://www.amarujala.com/rss/maharashtra.xml"
+    },
+    "rajasthan": {
+      "name": "Rajasthan",
+      "url": "https://www.amarujala.com/rss/rajasthan.xml"
+    },
+    "haryana": {
+      "name": "Haryana",
+      "url": "https://www.amarujala.com/rss/haryana.xml"
+    },
+    "himachal-pradesh": {
+      "name": "Himachal Pradesh",
+      "url": "https://www.amarujala.com/rss/himachal-pradesh.xml"
+    },
+    "gujarat": {
+      "name": "Gujarat",
+      "url": "https://www.amarujala.com/rss/gujarat.xml"
+    },
+    "gorakhpur": {
+      "name": "Gorakhpur",
+      "url": "https://www.amarujala.com/rss/gorakhpur.xml"
+    },
+    "chandigarh": {
+      "name": "Chandigarh",
+      "url": "https://www.amarujala.com/rss/chandigarh.xml"
+    },
+    "jammu": {
+      "name": "Jammu",
+      "url": "https://www.amarujala.com/rss/jammu.xml"
+    },
+    "delhi-ncr": {
+      "name": "Delhi Ncr",
+      "url": "https://www.amarujala.com/rss/delhi-ncr.xml"
+    },
+    "dehradun": {
+      "name": "Dehradun",
+      "url": "https://www.amarujala.com/rss/dehradun.xml"
+    },
+    "lucknow": {
+      "name": "Lucknow",
+      "url": "https://www.amarujala.com/rss/lucknow.xml"
+    },
+    "shimla": {
+      "name": "Shimla",
+      "url": "https://www.amarujala.com/rss/shimla.xml"
+    },
+    "amroha": {
+      "name": "Amroha",
+      "url": "https://www.amarujala.com/rss/amroha.xml"
+    },
+    "amethi": {
+      "name": "Amethi",
+      "url": "https://www.amarujala.com/rss/amethi.xml"
+    },
+    "ambedkar-nagar": {
+      "name": "Ambedkar Nagar",
+      "url": "https://www.amarujala.com/rss/ambedkar-nagar.xml"
+    },
+    "ayodhya": {
+      "name": "Ayodhya",
+      "url": "https://www.amarujala.com/rss/ayodhya.xml"
+    },
+    "aligarh": {
+      "name": "Aligarh",
+      "url": "https://www.amarujala.com/rss/aligarh.xml"
+    },
+    "agra": {
+      "name": "Agra",
+      "url": "https://www.amarujala.com/rss/agra.xml"
+    },
+    "azamgarh": {
+      "name": "Azamgarh",
+      "url": "https://www.amarujala.com/rss/azamgarh.xml"
+    },
+    "etawah": {
+      "name": "Etawah",
+      "url": "https://www.amarujala.com/rss/etawah.xml"
+    },
+    "unnao": {
+      "name": "Unnao",
+      "url": "https://www.amarujala.com/rss/unnao.xml"
+    },
+    "etah": {
+      "name": "Etah",
+      "url": "https://www.amarujala.com/rss/etah.xml"
+    },
+    "auraiya": {
+      "name": "Auraiya",
+      "url": "https://www.amarujala.com/rss/auraiya.xml"
+    },
+    "kannauj": {
+      "name": "Kannauj",
+      "url": "https://www.amarujala.com/rss/kannauj.xml"
+    },
+    "kanpur": {
+      "name": "Kanpur",
+      "url": "https://www.amarujala.com/rss/kanpur.xml"
+    },
+    "kasganj": {
+      "name": "Kasganj",
+      "url": "https://www.amarujala.com/rss/kasganj.xml"
+    },
+    "kushinagar": {
+      "name": "Kushinagar",
+      "url": "https://www.amarujala.com/rss/kushinagar.xml"
+    },
+    "kaushambi": {
+      "name": "Kaushambi",
+      "url": "https://www.amarujala.com/rss/kaushambi.xml"
+    },
+    "ghazipur": {
+      "name": "Ghazipur",
+      "url": "https://www.amarujala.com/rss/ghazipur.xml"
+    },
+    "gonda": {
+      "name": "Gonda",
+      "url": "https://www.amarujala.com/rss/gonda.xml"
+    },
+    "ghatampur": {
+      "name": "Ghatampur",
+      "url": "https://www.amarujala.com/rss/ghatampur.xml"
+    },
+    "chandauli": {
+      "name": "Chandauli",
+      "url": "https://www.amarujala.com/rss/chandauli.xml"
+    },
+    "chitrakoot": {
+      "name": "Chitrakoot",
+      "url": "https://www.amarujala.com/rss/chitrakoot.xml"
+    },
+    "jalaun": {
+      "name": "Jalaun",
+      "url": "https://www.amarujala.com/rss/jalaun.xml"
+    },
+    "jaunpur": {
+      "name": "Jaunpur",
+      "url": "https://www.amarujala.com/rss/jaunpur.xml"
+    },
+    "jhansi": {
+      "name": "Jhansi",
+      "url": "https://www.amarujala.com/rss/jhansi.xml"
+    },
+    "deoria": {
+      "name": "Deoria",
+      "url": "https://www.amarujala.com/rss/deoria.xml"
+    },
+    "pilibhit": {
+      "name": "Pilibhit",
+      "url": "https://www.amarujala.com/rss/pilibhit.xml"
+    },
+    "pratapgarh": {
+      "name": "Pratapgarh",
+      "url": "https://www.amarujala.com/rss/pratapgarh.xml"
+    },
+    "allahabad": {
+      "name": "Allahabad",
+      "url": "https://www.amarujala.com/rss/allahabad.xml"
+    },
+    "fatehpur": {
+      "name": "Fatehpur",
+      "url": "https://www.amarujala.com/rss/fatehpur.xml"
+    },
+    "farrukhabad": {
+      "name": "Farrukhabad",
+      "url": "https://www.amarujala.com/rss/farrukhabad.xml"
+    },
+    "firozabad": {
+      "name": "Firozabad",
+      "url": "https://www.amarujala.com/rss/firozabad.xml"
+    },
+    "budaun": {
+      "name": "Budaun",
+      "url": "https://www.amarujala.com/rss/budaun.xml"
+    },
+    "bareilly": {
+      "name": "Bareilly",
+      "url": "https://www.amarujala.com/rss/bareilly.xml"
+    },
+    "balrampur": {
+      "name": "Balrampur",
+      "url": "https://www.amarujala.com/rss/balrampur.xml"
+    },
+    "ballia": {
+      "name": "Ballia",
+      "url": "https://www.amarujala.com/rss/ballia.xml"
+    },
+    "basti": {
+      "name": "Basti",
+      "url": "https://www.amarujala.com/rss/basti.xml"
+    },
+    "bahraich": {
+      "name": "Bahraich",
+      "url": "https://www.amarujala.com/rss/bahraich.xml"
+    },
+    "banda": {
+      "name": "Banda",
+      "url": "https://www.amarujala.com/rss/banda.xml"
+    },
+    "baghpat": {
+      "name": "Baghpat",
+      "url": "https://www.amarujala.com/rss/baghpat.xml"
+    },
+    "barabanki": {
+      "name": "Barabanki",
+      "url": "https://www.amarujala.com/rss/barabanki.xml"
+    },
+    "bijnor": {
+      "name": "Bijnor",
+      "url": "https://www.amarujala.com/rss/bijnor.xml"
+    },
+    "bulandshahr": {
+      "name": "Bulandshahr",
+      "url": "https://www.amarujala.com/rss/bulandshahr.xml"
+    },
+    "bhadohi": {
+      "name": "Bhadohi",
+      "url": "https://www.amarujala.com/rss/bhadohi.xml"
+    },
+    "mau": {
+      "name": "Mau",
+      "url": "https://www.amarujala.com/rss/mau.xml"
+    },
+    "mathura": {
+      "name": "Mathura",
+      "url": "https://www.amarujala.com/rss/mathura.xml"
+    },
+    "maharajganj": {
+      "name": "Maharajganj",
+      "url": "https://www.amarujala.com/rss/maharajganj.xml"
+    },
+    "mahoba": {
+      "name": "Mahoba",
+      "url": "https://www.amarujala.com/rss/mahoba.xml"
+    },
+    "mirzapur": {
+      "name": "Mirzapur",
+      "url": "https://www.amarujala.com/rss/mirzapur.xml"
+    },
+    "muzaffarnagar": {
+      "name": "Muzaffarnagar",
+      "url": "https://www.amarujala.com/rss/muzaffarnagar.xml"
+    },
+    "moradabad": {
+      "name": "Moradabad",
+      "url": "https://www.amarujala.com/rss/moradabad.xml"
+    },
+    "meerut": {
+      "name": "Meerut",
+      "url": "https://www.amarujala.com/rss/meerut.xml"
+    },
+    "mainpuri": {
+      "name": "Mainpuri",
+      "url": "https://www.amarujala.com/rss/mainpuri.xml"
+    },
+    "rampur": {
+      "name": "Rampur",
+      "url": "https://www.amarujala.com/rss/rampur.xml"
+    },
+    "raebareli": {
+      "name": "Raebareli",
+      "url": "https://www.amarujala.com/rss/raebareli.xml"
+    },
+    "lakhimpur-kheri": {
+      "name": "Lakhimpur Kheri",
+      "url": "https://www.amarujala.com/rss/lakhimpur-kheri.xml"
+    },
+    "lalitpur": {
+      "name": "Lalitpur",
+      "url": "https://www.amarujala.com/rss/lalitpur.xml"
+    },
+    "varanasi": {
+      "name": "Varanasi",
+      "url": "https://www.amarujala.com/rss/varanasi.xml"
+    },
+    "shamli": {
+      "name": "Shamli",
+      "url": "https://www.amarujala.com/rss/shamli.xml"
+    },
+    "shahjahanpur": {
+      "name": "Shahjahanpur",
+      "url": "https://www.amarujala.com/rss/shahjahanpur.xml"
+    },
+    "shravasti": {
+      "name": "Shravasti",
+      "url": "https://www.amarujala.com/rss/shravasti.xml"
+    },
+    "sant-kabir-nagar": {
+      "name": "Sant Kabir Nagar",
+      "url": "https://www.amarujala.com/rss/sant-kabir-nagar.xml"
+    },
+    "sambhal": {
+      "name": "Sambhal",
+      "url": "https://www.amarujala.com/rss/sambhal.xml"
+    },
+    "saharanpur": {
+      "name": "Saharanpur",
+      "url": "https://www.amarujala.com/rss/saharanpur.xml"
+    },
+    "siddharthnagar": {
+      "name": "Siddharthnagar",
+      "url": "https://www.amarujala.com/rss/siddharthnagar.xml"
+    },
+    "sitapur": {
+      "name": "Sitapur",
+      "url": "https://www.amarujala.com/rss/sitapur.xml"
+    },
+    "sultanpur": {
+      "name": "Sultanpur",
+      "url": "https://www.amarujala.com/rss/sultanpur.xml"
+    },
+    "sonebhadra": {
+      "name": "Sonebhadra",
+      "url": "https://www.amarujala.com/rss/sonebhadra.xml"
+    },
+    "hamirpur": {
+      "name": "Hamirpur",
+      "url": "https://www.amarujala.com/rss/hamirpur.xml"
+    },
+    "hardoi": {
+      "name": "Hardoi",
+      "url": "https://www.amarujala.com/rss/hardoi.xml"
+    },
+    "hathras": {
+      "name": "Hathras",
+      "url": "https://www.amarujala.com/rss/hathras.xml"
+    },
+    "hapur": {
+      "name": "Hapur",
+      "url": "https://www.amarujala.com/rss/hapur.xml"
+    },
+    "almora": {
+      "name": "Almora",
+      "url": "https://www.amarujala.com/rss/almora.xml"
+    },
+    "uttarkashi": {
+      "name": "Uttarkashi",
+      "url": "https://www.amarujala.com/rss/uttarkashi.xml"
+    },
+    "udham-singh-nagar": {
+      "name": "Udham Singh Nagar",
+      "url": "https://www.amarujala.com/rss/udham-singh-nagar.xml"
+    },
+    "rishikesh": {
+      "name": "Rishikesh",
+      "url": "https://www.amarujala.com/rss/rishikesh.xml"
+    },
+    "kotdwar": {
+      "name": "Kotdwar",
+      "url": "https://www.amarujala.com/rss/kotdwar.xml"
+    },
+    "chamoli": {
+      "name": "Chamoli",
+      "url": "https://www.amarujala.com/rss/chamoli.xml"
+    },
+    "champawat": {
+      "name": "Champawat",
+      "url": "https://www.amarujala.com/rss/champawat.xml"
+    },
+    "tehri": {
+      "name": "Tehri",
+      "url": "https://www.amarujala.com/rss/tehri.xml"
+    },
+    "nainital": {
+      "name": "Nainital",
+      "url": "https://www.amarujala.com/rss/nainital.xml"
+    },
+    "pithoragarh": {
+      "name": "Pithoragarh",
+      "url": "https://www.amarujala.com/rss/pithoragarh.xml"
+    },
+    "pauri": {
+      "name": "Pauri",
+      "url": "https://www.amarujala.com/rss/pauri.xml"
+    },
+    "bageshwar": {
+      "name": "Bageshwar",
+      "url": "https://www.amarujala.com/rss/bageshwar.xml"
+    },
+    "roorkee": {
+      "name": "Roorkee",
+      "url": "https://www.amarujala.com/rss/roorkee.xml"
+    },
+    "rudraprayag": {
+      "name": "Rudraprayag",
+      "url": "https://www.amarujala.com/rss/rudraprayag.xml"
+    },
+    "haridwar": {
+      "name": "Haridwar",
+      "url": "https://www.amarujala.com/rss/haridwar.xml"
+    },
+    "panchkula": {
+      "name": "Panchkula",
+      "url": "https://www.amarujala.com/rss/panchkula.xml"
+    },
+    "mohali": {
+      "name": "Mohali",
+      "url": "https://www.amarujala.com/rss/mohali.xml"
+    },
+    "ambikapur": {
+      "name": "Ambikapur",
+      "url": "https://www.amarujala.com/rss/ambikapur.xml"
+    },
+    "kabirdham": {
+      "name": "Kabirdham",
+      "url": "https://www.amarujala.com/rss/kabirdham.xml"
+    },
+    "kanker": {
+      "name": "Kanker",
+      "url": "https://www.amarujala.com/rss/kanker.xml"
+    },
+    "korba": {
+      "name": "Korba",
+      "url": "https://www.amarujala.com/rss/korba.xml"
+    },
+    "gorella-pendra-marwahi": {
+      "name": "Gorella Pendra Marwahi",
+      "url": "https://www.amarujala.com/rss/gorella-pendra-marwahi.xml"
+    },
+    "jagdalpur": {
+      "name": "Jagdalpur",
+      "url": "https://www.amarujala.com/rss/jagdalpur.xml"
+    },
+    "janjgir-champa": {
+      "name": "Janjgir Champa",
+      "url": "https://www.amarujala.com/rss/janjgir-champa.xml"
+    },
+    "durg-bhilai": {
+      "name": "Durg Bhilai",
+      "url": "https://www.amarujala.com/rss/durg-bhilai.xml"
+    },
+    "dhamtari": {
+      "name": "Dhamtari",
+      "url": "https://www.amarujala.com/rss/dhamtari.xml"
+    },
+    "balodabazar-bhatapara": {
+      "name": "Balodabazar Bhatapara",
+      "url": "https://www.amarujala.com/rss/balodabazar-bhatapara.xml"
+    },
+    "balod": {
+      "name": "Balod",
+      "url": "https://www.amarujala.com/rss/balod.xml"
+    },
+    "bilaspur-chhattisgarh": {
+      "name": "Bilaspur Chhattisgarh",
+      "url": "https://www.amarujala.com/rss/bilaspur-chhattisgarh.xml"
+    },
+    "bijapur": {
+      "name": "Bijapur",
+      "url": "https://www.amarujala.com/rss/bijapur.xml"
+    },
+    "bemetara": {
+      "name": "Bemetara",
+      "url": "https://www.amarujala.com/rss/bemetara.xml"
+    },
+    "mahasamund": {
+      "name": "Mahasamund",
+      "url": "https://www.amarujala.com/rss/mahasamund.xml"
+    },
+    "raigarh": {
+      "name": "Raigarh",
+      "url": "https://www.amarujala.com/rss/raigarh.xml"
+    },
+    "raipur": {
+      "name": "Raipur",
+      "url": "https://www.amarujala.com/rss/raipur.xml"
+    },
+    "udhampur": {
+      "name": "Udhampur",
+      "url": "https://www.amarujala.com/rss/udhampur.xml"
+    },
+    "kathua": {
+      "name": "Kathua",
+      "url": "https://www.amarujala.com/rss/kathua.xml"
+    },
+    "poonch": {
+      "name": "Poonch",
+      "url": "https://www.amarujala.com/rss/poonch.xml"
+    },
+    "rajouri": {
+      "name": "Rajouri",
+      "url": "https://www.amarujala.com/rss/rajouri.xml"
+    },
+    "srinagar": {
+      "name": "Srinagar",
+      "url": "https://www.amarujala.com/rss/srinagar.xml"
+    },
+    "ghaziabad": {
+      "name": "Ghaziabad",
+      "url": "https://www.amarujala.com/rss/ghaziabad.xml"
+    },
+    "gurgaon": {
+      "name": "Gurgaon",
+      "url": "https://www.amarujala.com/rss/gurgaon.xml"
+    },
+    "nuh": {
+      "name": "Nuh",
+      "url": "https://www.amarujala.com/rss/nuh.xml"
+    },
+    "noida": {
+      "name": "Noida",
+      "url": "https://www.amarujala.com/rss/noida.xml"
+    },
+    "faridabad": {
+      "name": "Faridabad",
+      "url": "https://www.amarujala.com/rss/faridabad.xml"
+    },
+    "amritsar": {
+      "name": "Amritsar",
+      "url": "https://www.amarujala.com/rss/amritsar.xml"
+    },
+    "chandigarh-punjab": {
+      "name": "Chandigarh Punjab",
+      "url": "https://www.amarujala.com/rss/chandigarh-punjab.xml"
+    },
+    "jalandhar": {
+      "name": "Jalandhar",
+      "url": "https://www.amarujala.com/rss/jalandhar.xml"
+    },
+    "patiala": {
+      "name": "Patiala",
+      "url": "https://www.amarujala.com/rss/patiala.xml"
+    },
+    "ludhiana": {
+      "name": "Ludhiana",
+      "url": "https://www.amarujala.com/rss/ludhiana.xml"
+    },
+    "kosi": {
+      "name": "Kosi",
+      "url": "https://www.amarujala.com/rss/kosi.xml"
+    },
+    "muzaffarpur": {
+      "name": "Muzaffarpur",
+      "url": "https://www.amarujala.com/rss/muzaffarpur.xml"
+    },
+    "darbhanga": {
+      "name": "Darbhanga",
+      "url": "https://www.amarujala.com/rss/darbhanga.xml"
+    },
+    "patna": {
+      "name": "Patna",
+      "url": "https://www.amarujala.com/rss/patna.xml"
+    },
+    "purnea": {
+      "name": "Purnea",
+      "url": "https://www.amarujala.com/rss/purnea.xml"
+    },
+    "bhagalpur": {
+      "name": "Bhagalpur",
+      "url": "https://www.amarujala.com/rss/bhagalpur.xml"
+    },
+    "gaya": {
+      "name": "Gaya",
+      "url": "https://www.amarujala.com/rss/gaya.xml"
+    },
+    "munger": {
+      "name": "Munger",
+      "url": "https://www.amarujala.com/rss/munger.xml"
+    },
+    "saran": {
+      "name": "Saran",
+      "url": "https://www.amarujala.com/rss/saran.xml"
+    },
+    "anuppur": {
+      "name": "Anuppur",
+      "url": "https://www.amarujala.com/rss/anuppur.xml"
+    },
+    "ashoknagar": {
+      "name": "Ashoknagar",
+      "url": "https://www.amarujala.com/rss/ashoknagar.xml"
+    },
+    "agar-malwa": {
+      "name": "Agar Malwa",
+      "url": "https://www.amarujala.com/rss/agar-malwa.xml"
+    },
+    "indore": {
+      "name": "Indore",
+      "url": "https://www.amarujala.com/rss/indore.xml"
+    },
+    "ujjain": {
+      "name": "Ujjain",
+      "url": "https://www.amarujala.com/rss/ujjain.xml"
+    },
+    "umaria": {
+      "name": "Umaria",
+      "url": "https://www.amarujala.com/rss/umaria.xml"
+    },
+    "katni": {
+      "name": "Katni",
+      "url": "https://www.amarujala.com/rss/katni.xml"
+    },
+    "khandwa": {
+      "name": "Khandwa",
+      "url": "https://www.amarujala.com/rss/khandwa.xml"
+    },
+    "khargone": {
+      "name": "Khargone",
+      "url": "https://www.amarujala.com/rss/khargone.xml"
+    },
+    "guna": {
+      "name": "Guna",
+      "url": "https://www.amarujala.com/rss/guna.xml"
+    },
+    "gwalior": {
+      "name": "Gwalior",
+      "url": "https://www.amarujala.com/rss/gwalior.xml"
+    },
+    "chhatarpur": {
+      "name": "Chhatarpur",
+      "url": "https://www.amarujala.com/rss/chhatarpur.xml"
+    },
+    "chhindwara": {
+      "name": "Chhindwara",
+      "url": "https://www.amarujala.com/rss/chhindwara.xml"
+    },
+    "jabalpur": {
+      "name": "Jabalpur",
+      "url": "https://www.amarujala.com/rss/jabalpur.xml"
+    },
+    "jhabua": {
+      "name": "Jhabua",
+      "url": "https://www.amarujala.com/rss/jhabua.xml"
+    },
+    "tikamgarh": {
+      "name": "Tikamgarh",
+      "url": "https://www.amarujala.com/rss/tikamgarh.xml"
+    },
+    "dindori": {
+      "name": "Dindori",
+      "url": "https://www.amarujala.com/rss/dindori.xml"
+    },
+    "datia": {
+      "name": "Datia",
+      "url": "https://www.amarujala.com/rss/datia.xml"
+    },
+    "damoh": {
+      "name": "Damoh",
+      "url": "https://www.amarujala.com/rss/damoh.xml"
+    },
+    "dewas": {
+      "name": "Dewas",
+      "url": "https://www.amarujala.com/rss/dewas.xml"
+    },
+    "dhar": {
+      "name": "Dhar",
+      "url": "https://www.amarujala.com/rss/dhar.xml"
+    },
+    "narsinghpur": {
+      "name": "Narsinghpur",
+      "url": "https://www.amarujala.com/rss/narsinghpur.xml"
+    },
+    "narmadapuram": {
+      "name": "Narmadapuram",
+      "url": "https://www.amarujala.com/rss/narmadapuram.xml"
+    },
+    "neemuch": {
+      "name": "Neemuch",
+      "url": "https://www.amarujala.com/rss/neemuch.xml"
+    },
+    "panna": {
+      "name": "Panna",
+      "url": "https://www.amarujala.com/rss/panna.xml"
+    },
+    "barwani": {
+      "name": "Barwani",
+      "url": "https://www.amarujala.com/rss/barwani.xml"
+    },
+    "balaghat": {
+      "name": "Balaghat",
+      "url": "https://www.amarujala.com/rss/balaghat.xml"
+    },
+    "burhanpur": {
+      "name": "Burhanpur",
+      "url": "https://www.amarujala.com/rss/burhanpur.xml"
+    },
+    "betul": {
+      "name": "Betul",
+      "url": "https://www.amarujala.com/rss/betul.xml"
+    },
+    "bhind": {
+      "name": "Bhind",
+      "url": "https://www.amarujala.com/rss/bhind.xml"
+    },
+    "bhopal": {
+      "name": "Bhopal",
+      "url": "https://www.amarujala.com/rss/bhopal.xml"
+    },
+    "mandla": {
+      "name": "Mandla",
+      "url": "https://www.amarujala.com/rss/mandla.xml"
+    },
+    "mandsaur": {
+      "name": "Mandsaur",
+      "url": "https://www.amarujala.com/rss/mandsaur.xml"
+    },
+    "morena": {
+      "name": "Morena",
+      "url": "https://www.amarujala.com/rss/morena.xml"
+    },
+    "maihar": {
+      "name": "Maihar",
+      "url": "https://www.amarujala.com/rss/maihar.xml"
+    },
+    "ratlam": {
+      "name": "Ratlam",
+      "url": "https://www.amarujala.com/rss/ratlam.xml"
+    },
+    "rajgarh": {
+      "name": "Rajgarh",
+      "url": "https://www.amarujala.com/rss/rajgarh.xml"
+    },
+    "raisen": {
+      "name": "Raisen",
+      "url": "https://www.amarujala.com/rss/raisen.xml"
+    },
+    "rewa": {
+      "name": "Rewa",
+      "url": "https://www.amarujala.com/rss/rewa.xml"
+    },
+    "vidisha": {
+      "name": "Vidisha",
+      "url": "https://www.amarujala.com/rss/vidisha.xml"
+    },
+    "shahdol": {
+      "name": "Shahdol",
+      "url": "https://www.amarujala.com/rss/shahdol.xml"
+    },
+    "shajapur": {
+      "name": "Shajapur",
+      "url": "https://www.amarujala.com/rss/shajapur.xml"
+    },
+    "shivpuri": {
+      "name": "Shivpuri",
+      "url": "https://www.amarujala.com/rss/shivpuri.xml"
+    },
+    "sheopur": {
+      "name": "Sheopur",
+      "url": "https://www.amarujala.com/rss/sheopur.xml"
+    },
+    "satna": {
+      "name": "Satna",
+      "url": "https://www.amarujala.com/rss/satna.xml"
+    },
+    "sagar": {
+      "name": "Sagar",
+      "url": "https://www.amarujala.com/rss/sagar.xml"
+    },
+    "singrauli": {
+      "name": "Singrauli",
+      "url": "https://www.amarujala.com/rss/singrauli.xml"
+    },
+    "seoni": {
+      "name": "Seoni",
+      "url": "https://www.amarujala.com/rss/seoni.xml"
+    },
+    "sidhi": {
+      "name": "Sidhi",
+      "url": "https://www.amarujala.com/rss/sidhi.xml"
+    },
+    "sehore": {
+      "name": "Sehore",
+      "url": "https://www.amarujala.com/rss/sehore.xml"
+    },
+    "harda": {
+      "name": "Harda",
+      "url": "https://www.amarujala.com/rss/harda.xml"
+    },
+    "ajmer": {
+      "name": "Ajmer",
+      "url": "https://www.amarujala.com/rss/ajmer.xml"
+    },
+    "alwar": {
+      "name": "Alwar",
+      "url": "https://www.amarujala.com/rss/alwar.xml"
+    },
+    "udaipur": {
+      "name": "Udaipur",
+      "url": "https://www.amarujala.com/rss/udaipur.xml"
+    },
+    "karauli": {
+      "name": "Karauli",
+      "url": "https://www.amarujala.com/rss/karauli.xml"
+    },
+    "kotputli-behror": {
+      "name": "Kotputli Behror",
+      "url": "https://www.amarujala.com/rss/kotputli-behror.xml"
+    },
+    "kota": {
+      "name": "Kota",
+      "url": "https://www.amarujala.com/rss/kota.xml"
+    },
+    "chittorgarh": {
+      "name": "Chittorgarh",
+      "url": "https://www.amarujala.com/rss/chittorgarh.xml"
+    },
+    "jaipur": {
+      "name": "Jaipur",
+      "url": "https://www.amarujala.com/rss/jaipur.xml"
+    },
+    "jalore": {
+      "name": "Jalore",
+      "url": "https://www.amarujala.com/rss/jalore.xml"
+    },
+    "jaisalmer": {
+      "name": "Jaisalmer",
+      "url": "https://www.amarujala.com/rss/jaisalmer.xml"
+    },
+    "jodhpur": {
+      "name": "Jodhpur",
+      "url": "https://www.amarujala.com/rss/jodhpur.xml"
+    },
+    "jhunjhunu": {
+      "name": "Jhunjhunu",
+      "url": "https://www.amarujala.com/rss/jhunjhunu.xml"
+    },
+    "tonk": {
+      "name": "Tonk",
+      "url": "https://www.amarujala.com/rss/tonk.xml"
+    },
+    "dausa": {
+      "name": "Dausa",
+      "url": "https://www.amarujala.com/rss/dausa.xml"
+    },
+    "dholpur": {
+      "name": "Dholpur",
+      "url": "https://www.amarujala.com/rss/dholpur.xml"
+    },
+    "nagaur": {
+      "name": "Nagaur",
+      "url": "https://www.amarujala.com/rss/nagaur.xml"
+    },
+    "banswara": {
+      "name": "Banswara",
+      "url": "https://www.amarujala.com/rss/banswara.xml"
+    },
+    "barmer": {
+      "name": "Barmer",
+      "url": "https://www.amarujala.com/rss/barmer.xml"
+    },
+    "baran": {
+      "name": "Baran",
+      "url": "https://www.amarujala.com/rss/baran.xml"
+    },
+    "balotra": {
+      "name": "Balotra",
+      "url": "https://www.amarujala.com/rss/balotra.xml"
+    },
+    "bikaner": {
+      "name": "Bikaner",
+      "url": "https://www.amarujala.com/rss/bikaner.xml"
+    },
+    "bundi": {
+      "name": "Bundi",
+      "url": "https://www.amarujala.com/rss/bundi.xml"
+    },
+    "bharatpur": {
+      "name": "Bharatpur",
+      "url": "https://www.amarujala.com/rss/bharatpur.xml"
+    },
+    "bhilwara": {
+      "name": "Bhilwara",
+      "url": "https://www.amarujala.com/rss/bhilwara.xml"
+    },
+    "rajsamand": {
+      "name": "Rajsamand",
+      "url": "https://www.amarujala.com/rss/rajsamand.xml"
+    },
+    "sri-ganganagar": {
+      "name": "Sri Ganganagar",
+      "url": "https://www.amarujala.com/rss/sri-ganganagar.xml"
+    },
+    "salumber": {
+      "name": "Salumber",
+      "url": "https://www.amarujala.com/rss/salumber.xml"
+    },
+    "sawai-madhopur": {
+      "name": "Sawai Madhopur",
+      "url": "https://www.amarujala.com/rss/sawai-madhopur.xml"
+    },
+    "sirohi": {
+      "name": "Sirohi",
+      "url": "https://www.amarujala.com/rss/sirohi.xml"
+    },
+    "sikar": {
+      "name": "Sikar",
+      "url": "https://www.amarujala.com/rss/sikar.xml"
+    },
+    "hanumangarh": {
+      "name": "Hanumangarh",
+      "url": "https://www.amarujala.com/rss/hanumangarh.xml"
+    },
+    "ambala": {
+      "name": "Ambala",
+      "url": "https://www.amarujala.com/rss/ambala.xml"
+    },
+    "karnal": {
+      "name": "Karnal",
+      "url": "https://www.amarujala.com/rss/karnal.xml"
+    },
+    "kurukshetra": {
+      "name": "Kurukshetra",
+      "url": "https://www.amarujala.com/rss/kurukshetra.xml"
+    },
+    "kaithal": {
+      "name": "Kaithal",
+      "url": "https://www.amarujala.com/rss/kaithal.xml"
+    },
+    "chandigarh-haryana": {
+      "name": "Chandigarh Haryana",
+      "url": "https://www.amarujala.com/rss/chandigarh-haryana.xml"
+    },
+    "charkhi-dadri": {
+      "name": "Charkhi Dadri",
+      "url": "https://www.amarujala.com/rss/charkhi-dadri.xml"
+    },
+    "jind": {
+      "name": "Jind",
+      "url": "https://www.amarujala.com/rss/jind.xml"
+    },
+    "jhajjar-bahadurgarh": {
+      "name": "Jhajjar Bahadurgarh",
+      "url": "https://www.amarujala.com/rss/jhajjar-bahadurgarh.xml"
+    },
+    "palwal": {
+      "name": "Palwal",
+      "url": "https://www.amarujala.com/rss/palwal.xml"
+    },
+    "panipat": {
+      "name": "Panipat",
+      "url": "https://www.amarujala.com/rss/panipat.xml"
+    },
+    "fatehabad": {
+      "name": "Fatehabad",
+      "url": "https://www.amarujala.com/rss/fatehabad.xml"
+    },
+    "bhiwani": {
+      "name": "Bhiwani",
+      "url": "https://www.amarujala.com/rss/bhiwani.xml"
+    },
+    "mahendragarh-narnaul": {
+      "name": "Mahendragarh Narnaul",
+      "url": "https://www.amarujala.com/rss/mahendragarh-narnaul.xml"
+    },
+    "yamuna-nagar": {
+      "name": "Yamuna Nagar",
+      "url": "https://www.amarujala.com/rss/yamuna-nagar.xml"
+    },
+    "rewari": {
+      "name": "Rewari",
+      "url": "https://www.amarujala.com/rss/rewari.xml"
+    },
+    "rohtak": {
+      "name": "Rohtak",
+      "url": "https://www.amarujala.com/rss/rohtak.xml"
+    },
+    "sirsa": {
+      "name": "Sirsa",
+      "url": "https://www.amarujala.com/rss/sirsa.xml"
+    },
+    "sonipat": {
+      "name": "Sonipat",
+      "url": "https://www.amarujala.com/rss/sonipat.xml"
+    },
+    "hisar": {
+      "name": "Hisar",
+      "url": "https://www.amarujala.com/rss/hisar.xml"
+    },
+    "una": {
+      "name": "Una",
+      "url": "https://www.amarujala.com/rss/una.xml"
+    },
+    "kangra": {
+      "name": "Kangra",
+      "url": "https://www.amarujala.com/rss/kangra.xml"
+    },
+    "kullu": {
+      "name": "Kullu",
+      "url": "https://www.amarujala.com/rss/kullu.xml"
+    },
+    "chamba": {
+      "name": "Chamba",
+      "url": "https://www.amarujala.com/rss/chamba.xml"
+    },
+    "dharamshala": {
+      "name": "Dharamshala",
+      "url": "https://www.amarujala.com/rss/himachal-pradesh/dharamshala.xml"
+    },
+    "bilaspur": {
+      "name": "Bilaspur",
+      "url": "https://www.amarujala.com/rss/bilaspur.xml"
+    },
+    "mandi": {
+      "name": "Mandi",
+      "url": "https://www.amarujala.com/rss/mandi.xml"
+    },
+    "rampur-bushahar": {
+      "name": "Rampur Bushahar",
+      "url": "https://www.amarujala.com/rss/rampur-bushahar.xml"
+    },
+    "sirmour": {
+      "name": "Sirmour",
+      "url": "https://www.amarujala.com/rss/sirmour.xml"
+    },
+    "solan": {
+      "name": "Solan",
+      "url": "https://www.amarujala.com/rss/solan.xml"
+    },
+    "hamirpur-hp": {
+      "name": "Hamirpur Hp",
+      "url": "https://www.amarujala.com/rss/hamirpur-hp.xml"
+    }
+  }
+}

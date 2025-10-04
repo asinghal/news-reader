@@ -9,9 +9,21 @@ app.set("view engine", "pug");
 app.set("views", "./views");
 app.use(express.static(path.join(__dirname, "public")));
 
-const files = fs.readdirSync(__dirname + "/" + "feeds");
-const jsonFiles = files.filter((file) => file.endsWith(".json"));
-const sources = jsonFiles.map((file) => require(`./feeds/${file}`));
+function getJSONFiles(dir) {
+  const files = fs.readdirSync(dir);
+  const jsonFiles = files.filter((file) => file.endsWith(".json"));
+  return jsonFiles;
+}
+
+const sources = getJSONFiles(__dirname + "/" + "feeds").map((file) =>
+  require(`./feeds/${file}`),
+);
+const languages = getJSONFiles(__dirname + "/" + "lang")
+  .map((file) => ({
+    [file.split(".")[0]]: require(`./lang/${file}`),
+  }))
+  .reduce((acc, curr) => ({ ...acc, ...curr }), {});
+
 const { getBrightness } = require("./images");
 
 const getSegment = async (
@@ -80,6 +92,7 @@ sources.forEach((source) => {
       title: metadata.name,
       favicon: metadata.favicon,
       author: metadata.author,
+      translations: languages[metadata.language],
       date,
       segments,
       page,
@@ -132,6 +145,7 @@ sources.forEach((source) => {
       title: metadata.name,
       favicon: metadata.favicon,
       author: metadata.author,
+      translations: languages[metadata.language],
       date,
       segments,
       page: "home",
