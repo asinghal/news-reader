@@ -1,5 +1,15 @@
 const Parser = require("rss-parser");
 const cheerio = require("cheerio");
+const fs = require("fs");
+const path = require("path");
+
+const files = fs.readdirSync(path.join(__dirname, "lang"));
+const jsonFiles = files.filter((file) => file.endsWith(".json"));
+const languages = jsonFiles
+  .map((file) => ({
+    [file.split(".")[0]]: require(`./lang/${file}`),
+  }))
+  .reduce((acc, curr) => ({ ...acc, ...curr }), {});
 
 const parser = new Parser({
   customFields: {
@@ -30,31 +40,51 @@ const getFeed = async (url) => {
   }
 };
 
-function timeAgo(date) {
+function timeAgo(date, lang = "en") {
   const now = new Date();
   const seconds = Math.floor((now - date) / 1000);
 
   let interval = Math.floor(seconds / 31536000);
   if (interval >= 1)
-    return interval + " year" + (interval > 1 ? "s" : "") + " ago";
+    return (
+      interval +
+      " " +
+      (interval > 1 ? languages[lang].years_ago : languages[lang].year_ago)
+    );
 
   interval = Math.floor(seconds / 2592000);
   if (interval >= 1)
-    return interval + " month" + (interval > 1 ? "s" : "") + " ago";
+    return (
+      interval +
+      " " +
+      (interval > 1 ? languages[lang].months_ago : languages[lang].month_ago)
+    );
 
   interval = Math.floor(seconds / 86400);
   if (interval >= 1)
-    return interval + " day" + (interval > 1 ? "s" : "") + " ago";
+    return (
+      interval +
+      " " +
+      (interval > 1 ? languages[lang].days_ago : languages[lang].day_ago)
+    );
 
   interval = Math.floor(seconds / 3600);
   if (interval >= 1)
-    return interval + " hour" + (interval > 1 ? "s" : "") + " ago";
+    return (
+      interval +
+      " " +
+      (interval > 1 ? languages[lang].hours_ago : languages[lang].hour_ago)
+    );
 
   interval = Math.floor(seconds / 60);
   if (interval >= 15)
-    return interval + " minute" + (interval > 1 ? "s" : "") + " ago";
+    return (
+      interval +
+      " " +
+      (interval > 1 ? languages[lang].minutes_ago : languages[lang].minute_ago)
+    );
 
-  return "Just now";
+  return languages[lang].just_now;
 }
 
 /**
@@ -92,7 +122,7 @@ const labels = {
   ASTRO: "Astrology",
 };
 
-const fetchRSS = async (url, articleLocator, expand = false) => {
+const fetchRSS = async (url, articleLocator, language, expand = false) => {
   const _feed = await getFeed(url);
   const feed = { ..._feed };
 
@@ -126,7 +156,7 @@ const fetchRSS = async (url, articleLocator, expand = false) => {
       }
 
       if (item.pubDate && isAbsoluteDateString(item.pubDate)) {
-        item.pubDate = timeAgo(new Date(item.pubDate));
+        item.pubDate = timeAgo(new Date(item.pubDate), language);
       }
 
       if (item.creator) {
@@ -136,7 +166,7 @@ const fetchRSS = async (url, articleLocator, expand = false) => {
       }
 
       if (!item.labels || item.labels.length === 0) {
-        item.labels = ["News"];
+        item.labels = [languages[language].news];
       }
 
       const content = item.content || item.contentSnippet || "";

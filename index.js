@@ -14,13 +14,19 @@ const jsonFiles = files.filter((file) => file.endsWith(".json"));
 const sources = jsonFiles.map((file) => require(`./feeds/${file}`));
 const { getBrightness } = require("./images");
 
-const getSegment = async (url, title, articleLocator, expand = false) => {
-  const feed = await fetchRSS(url, articleLocator, expand);
+const getSegment = async (
+  url,
+  title,
+  articleLocator,
+  language,
+  expand = false,
+) => {
+  const feed = await fetchRSS(url, articleLocator, language, expand);
   return { title, items: feed.items.slice(0, 10) };
 };
 
-const getPrimary = async (url, articleLocator, expand = false) => {
-  const feed = await fetchRSS(url, articleLocator, expand);
+const getPrimary = async (url, articleLocator, language, expand = false) => {
+  const feed = await fetchRSS(url, articleLocator, language, expand);
   const mainArticle = feed.items[0];
   const count = feed.items.length;
   const optimumCount = count - (count % 6);
@@ -49,6 +55,7 @@ sources.forEach((source) => {
     const { feed, mainArticle, date } = await getPrimary(
       url,
       articleLocator,
+      metadata.language,
       true,
     );
     if (mainArticle && mainArticle.enclosure && mainArticle.enclosure.url) {
@@ -88,6 +95,7 @@ sources.forEach((source) => {
     const { feed, mainArticle, date } = await getPrimary(
       rssFeeds.home.url,
       articleLocator,
+      metadata.language,
       true,
     );
     if (mainArticle && mainArticle.enclosure && mainArticle.enclosure.url) {
@@ -106,6 +114,7 @@ sources.forEach((source) => {
             rssFeeds[key].url,
             rssFeeds[key].name,
             articleLocator,
+            metadata.language,
           );
         }),
     );
