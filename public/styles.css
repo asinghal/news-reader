@@ -238,11 +238,11 @@ body {
         box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1); /* Soft shadow */
     }
 
-    .article.banner.light {
+    .article.banner.header-light {
         background: #fff;
     }
 
-    .article.banner.dark {
+    .article.banner.header-dark {
         background: #333;
     }
 

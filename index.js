@@ -73,7 +73,7 @@ sources.forEach((source) => {
     if (mainArticle && mainArticle.enclosure && mainArticle.enclosure.url) {
       images.push(mainArticle.enclosure.url);
       const brightness = await getBrightness(mainArticle.enclosure.url);
-      mainArticle.enclosure.brightness = brightness;
+      mainArticle.enclosure.brightness = `${brightness.full} header-${brightness.top}`;
     }
     const segments = [];
     const nav = Object.keys(rssFeeds)
@@ -114,7 +114,7 @@ sources.forEach((source) => {
     if (mainArticle && mainArticle.enclosure && mainArticle.enclosure.url) {
       images.push(mainArticle.enclosure.url);
       const brightness = await getBrightness(mainArticle.enclosure.url);
-      mainArticle.enclosure.brightness = brightness;
+      mainArticle.enclosure.brightness = `${brightness.full} header-${brightness.top}`;
     }
     const nav = Object.keys(rssFeeds)
       .filter((key) => !!rssFeeds[key].nav)
