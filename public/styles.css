@@ -269,7 +269,7 @@ body {
 
 @media screen and (max-width: 768px) {
     .container {
-        margin-top: 6em;
+        margin-top: 4em;
     }
 
     .article.banner .main-content {
@@ -282,8 +282,8 @@ body {
     }
 
     .header {
-        padding: 1em 2em;
-        width: calc(100% - 2em);
+        padding: 0em 0.5em;
+        width: calc(100% - 1em);
     }
 
     .header .nav {
@@ -348,6 +348,10 @@ body {
 
     .catalogue {
         display: none;
+    }
+
+    .header .main .site-title {
+        font-size: 1.35em;
     }
 }
 

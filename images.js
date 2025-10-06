@@ -3,7 +3,7 @@ const { Jimp } = require("jimp");
 async function getImageBrightness(image, topOnly = false) {
   try {
     let colorSum = 0;
-    const height = topOnly ? 50 : image.bitmap.height;
+    const height = topOnly ? 75 : image.bitmap.height;
 
     image.scan(0, 0, image.bitmap.width, height, function (x, y, idx) {
       const red = this.bitmap.data[idx + 0];
