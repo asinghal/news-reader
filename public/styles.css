@@ -22,15 +22,16 @@ body {
     left: 0;
     width: calc(100% - 8em);
     z-index: 9999;
-    background: rgba(0, 0, 0, 0.15); /* Transparent white */
+    background: rgba(0, 0, 0, 0.45); /* Transparent white */
     backdrop-filter: blur(10px); /* The magic: frosted blur */
     -webkit-backdrop-filter: blur(10px); /* Safari support */
     border: 1px solid rgba(0, 0, 0, 0.05); /* Light border */
     box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1); /* Soft shadow */
 }
 
-.header .main.dark {
+.header.dark {
     color: #333;
+    background: rgba(255, 255, 255, 0.45); /* Transparent white */
 }
 
 .container {

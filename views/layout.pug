@@ -87,9 +87,13 @@ html
                 if (brightness < 128) {
                     nav.classList.add("light");
                     nav.classList.remove("dark");
+                    nav.parentElement.classList.add("light");
+                    nav.parentElement.classList.remove("dark");
                 } else {
                     nav.classList.add("dark");
                     nav.classList.remove("light");
+                    nav.parentElement.classList.add("dark");
+                    nav.parentElement.classList.remove("light");
                 }
             }
 
