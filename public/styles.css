@@ -110,13 +110,18 @@ body {
     border-radius: 16px;
 }
 
+.header .main.dark .nav li.active a {
+    background: rgba(226, 226, 226, 0.75); /* Transparent white */
+    border: 1px solid rgba(226, 226, 226, 1); /* Light border */
+}
+
 .header .nav a {
     color: inherit;
     text-decoration: none;
 }
 
 .header .main.dark .nav a:hover {
-    color: #f8f1f1;
+    color: #777;
 }
 
 .header .main.light .nav a:hover {
