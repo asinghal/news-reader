@@ -1,4 +1,4 @@
-const { Jimp } = require("jimp");
+import { Jimp } from "jimp";
 
 async function getImageBrightness(image, topOnly = false) {
   try {
@@ -24,6 +24,9 @@ async function getImageBrightness(image, topOnly = false) {
 
 async function getBrightness(imageUrl) {
   try {
+    if (imageUrl.indexOf("//") === 0) {
+      imageUrl = `http:${imageUrl}`;
+    }
     const image = await Jimp.read(imageUrl);
     const full = await getImageBrightness(image);
     const top = await getImageBrightness(image, true);
@@ -34,4 +37,4 @@ async function getBrightness(imageUrl) {
   }
 }
 
-module.exports = { getBrightness };
+export { getBrightness };
