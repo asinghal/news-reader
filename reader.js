@@ -37,7 +37,7 @@ async function processItemAsynchronous(
 
   // 2. Crawl for Image if missing
   const hasImage = processedItem.enclosure?.url;
-  if (!hasImage && imageLocator && processedItem.link) {
+  if (expand && !hasImage && imageLocator && processedItem.link) {
     const image = await crawlPage(processedItem.link, imageLocator, [
       "data-src",
       "src",

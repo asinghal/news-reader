@@ -3,6 +3,7 @@
     "name": "दैनिक भास्कर",
     "url": "https://www.bhaskar.com/",
     "author": "दैनिक भास्कर",
+    "crawlAllowed": true,
     "description": "Dainik Bhaskar (दैनिक भास्कर) Hindi News Samachar - Find all Hindi News and Samachar, News in Hindi, Hindi News Headlines and Daily Breaking Hindi News Today and Updated From Bhaskar.com",
     "language": "hi",
     "rootURI": "db",

@@ -116,6 +116,7 @@ sources.forEach((source) => {
   const rssFeeds = source.feeds;
   const articleLocator = metadata.articleLocator || ".js_tbl_article";
   const imageLocator = metadata.imageLocator;
+  const crawlAllowed = metadata.crawlAllowed || false;
 
   async function renderSegment(res, url, page) {
     const images = [];
@@ -124,7 +125,7 @@ sources.forEach((source) => {
       articleLocator,
       metadata.language,
       3,
-      true,
+      crawlAllowed,
       imageLocator,
     );
     if (mainArticle && mainArticle.enclosure && mainArticle.enclosure.url) {
@@ -167,7 +168,7 @@ sources.forEach((source) => {
       articleLocator,
       metadata.language,
       2,
-      true,
+      metadata.crawlAllowed,
       metadata.imageLocator,
     );
     if (mainArticle && mainArticle.enclosure && mainArticle.enclosure.url) {

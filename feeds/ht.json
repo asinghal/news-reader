@@ -5,6 +5,7 @@
     "author": "HT",
     "description": "The Hindustan Times is an Indian English-language daily newspaper owned by HT Media Ltd. It is one of the largest newspapers in India.",
     "language": "en",
+    "crawlAllowed": true,
     "rootURI": "ht",
     "logo": "https://www.hindustantimes.com/static-content/1y/ht/ht_100_logoblack@2x.webp",
     "articleLocator": ".storyDetails",

@@ -5,6 +5,7 @@
     "author": "हिन्दुस्तान",
     "description": "Today Hindi News (हिंदी न्यूज़): Get latest Hindi News and breaking news in Hindi related to India, Business, Bollywood, Cricket, Education and states. पढ़ें Aaj ki taza khabar और live Hindi News Updates के साथ देश - दुनिया की ताजा खबरें हिंदी में हिंदुस्तान पर |",
     "language": "hi",
+    "crawlAllowed": true,
     "rootURI": "hh",
     "logo": "https://www.livehindustan.com/static-content/1y/lh/img/lh-logo-desk.webp",
     "articleLocator": ".metering_article_detail",
