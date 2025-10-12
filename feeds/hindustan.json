@@ -1,0 +1,68 @@
+{
+  "metadata": {
+    "name": "हिन्दुस्तान",
+    "url": "https://www.livehindustan.com/",
+    "author": "हिन्दुस्तान",
+    "description": "Today Hindi News (हिंदी न्यूज़): Get latest Hindi News and breaking news in Hindi related to India, Business, Bollywood, Cricket, Education and states. पढ़ें Aaj ki taza khabar और live Hindi News Updates के साथ देश - दुनिया की ताजा खबरें हिंदी में हिंदुस्तान पर |",
+    "language": "hi",
+    "rootURI": "hh",
+    "logo": "https://images.livehindustan.com/uploadimage/images/hh_logo.png",
+    "articleLocator": ".metering_article_detail",
+    "imageLocator": "#storyMianImage img",
+    "favicon": "https://www.livehindustan.com/static-content/1y/lh/img/favicon-96x96.ico"
+  },
+  "feeds": {
+    "home": {
+      "name": "मुख्य समाचार",
+      "url": "https://api.livehindustan.com/feeds/rss/news-brief/rssfeed.xml"
+    },
+    "national-news": {
+      "name": "समाचार",
+      "featured": true,
+      "nav": true,
+      "url": "https://api.livehindustan.com/feeds/rss/national/rssfeed.xml"
+    },
+    "latest": {
+      "name": "आज के हिन्दुस्तान से",
+      "featured": true,
+      "url": "https://api.livehindustan.com/feeds/rss/national/today/rssfeed.xml"
+    },
+    "national": {
+      "name": "देश",
+      "featured": true,
+      "nav": true,
+      "url": "https://api.livehindustan.com/feeds/rss/national/national-news/rssfeed.xml"
+    },
+    "sports": {
+      "name": "खेल",
+      "nav": true,
+      "url": "https://api.livehindustan.com/feeds/rss/sports/rssfeed.xml"
+    },
+    "entertainment": {
+      "name": "मनोरंजन",
+      "nav": true,
+      "url": "https://api.livehindustan.com/feeds/rss/entertainment/rssfeed.xml"
+    },
+    "weather": {
+      "name": "मौसम",
+      "featured": true,
+      "url": "https://api.livehindustan.com/feeds/rss/weather/rssfeed.xml"
+    },
+    "astrology": {
+      "name": "धर्म",
+      "nav": true,
+      "url": "https://api.livehindustan.com/feeds/rss/astrology/rssfeed.xml"
+    },
+    "business": {
+      "name": "व्यापार",
+      "featured": true,
+      "nav": true,
+      "url": "https://api.livehindustan.com/feeds/rss/business/rssfeed.xml"
+    },
+    "auto": {
+      "name": "ऑटो",
+      "nav": true,
+      "url": "https://api.livehindustan.com/feeds/rss/auto/rssfeed.xml"
+    }
+  }
+}
