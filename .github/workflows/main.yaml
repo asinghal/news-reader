@@ -30,4 +30,4 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
           port: ${{ secrets.PORT }}
-          script: cd /apps/news && sudo tar -xvf /home/ec2-user/news.tar
+          script: cd /apps/news && sudo tar -xvf /home/ec2-user/news.tar && sudo npm install && sudo pm2 restart all --update-env
