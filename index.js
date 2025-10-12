@@ -82,6 +82,7 @@ const getPrimary = async (
   url,
   articleLocator,
   language,
+  articlesPerRow = 3,
   expand = false,
   imageLocator = null,
 ) => {
@@ -94,7 +95,7 @@ const getPrimary = async (
   );
   const mainArticle = feed.items[0];
   const count = feed.items.length;
-  const optimumCount = count - (count % 6);
+  const optimumCount = count - (count % articlesPerRow);
   feed.items = feed.items.slice(1, optimumCount + 1);
   const date = new Date().toLocaleDateString("en-GB");
   return { feed, mainArticle, date };
@@ -122,6 +123,7 @@ sources.forEach((source) => {
       url,
       articleLocator,
       metadata.language,
+      3,
       true,
       imageLocator,
     );
@@ -164,6 +166,7 @@ sources.forEach((source) => {
       rssFeeds.home.url,
       articleLocator,
       metadata.language,
+      2,
       true,
       metadata.imageLocator,
     );
