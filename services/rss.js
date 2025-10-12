@@ -39,7 +39,7 @@ export async function fetchAndParseFeed(url) {
  * @param {string | null} attribute The HTML attribute to extract (e.g., 'src').
  * @returns {Promise<string | undefined>} The extracted text or attribute value.
  */
-export async function crawlPage(url, locator, attribute = null) {
+export async function crawlPage(url, locator, attributes = []) {
   try {
     const response = await fetch(url);
     if (!response.ok) {
@@ -48,8 +48,10 @@ export async function crawlPage(url, locator, attribute = null) {
     const $ = cheerio.load(await response.text());
     const element = $(locator);
 
-    if (attribute) {
-      return element.attr(attribute);
+    if (attributes && attributes.length) {
+      return attributes
+        .map((attribute) => element.attr(attribute))
+        .find((value) => !!value);
     }
     return element.text().trim();
   } catch (error) {
