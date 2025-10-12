@@ -13,19 +13,14 @@
   },
   "feeds": {
     "home": {
-      "name": "मुख्य समाचार",
-      "url": "https://api.livehindustan.com/feeds/rss/news-brief/rssfeed.xml"
-    },
-    "national-news": {
       "name": "समाचार",
-      "featured": true,
-      "nav": true,
       "url": "https://api.livehindustan.com/feeds/rss/national/rssfeed.xml"
     },
     "latest": {
-      "name": "आज के हिन्दुस्तान से",
+      "name": "विदेश",
+      "nav": true,
       "featured": true,
-      "url": "https://api.livehindustan.com/feeds/rss/national/today/rssfeed.xml"
+      "url": "https://api.livehindustan.com/feeds/rss/international/rssfeed.xml"
     },
     "national": {
       "name": "देश",
