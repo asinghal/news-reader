@@ -24,6 +24,6 @@ html
             li(style="margin-bottom: 2em; list-style: none;")
                 if source.logo
                     a(href=`/${source.uri}`)
-                        img(src=source.logo, alt=source.name, style="max-width: 100%; height: auto; margin: 0 auto; display: block;")
+                        img(src=source.logo, alt=source.name, style="max-height: 100px; height: auto; margin: 0 auto; display: block;")
                 else
                     a(href=`/${source.uri}`)= source.name
