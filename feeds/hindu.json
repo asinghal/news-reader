@@ -11,55 +11,222 @@
     "favicon": "https://www.thehindu.com/favicon.ico"
   },
   "feeds": {
-    "home": { "name": "Home", "url": "https://www.thehindu.com/feeder/default.rss" },
-    "business": { "name": "Business", "featured": true, "nav": true, "url": "https://www.thehindu.com/business/feeder/default.rss" },
-    "opinion": { "name": "Opinion", "featured": true, "nav": true, "url": "https://www.thehindu.com/opinion/feeder/default.rss" },
-    "world": { "name": "World", "featured": true, "nav": true, "url": "https://www.thehindu.com/news/international/feeder/default.rss" },
-    "sports": { "name": "Sports", "featured": true, "nav": true, "url": "https://www.thehindu.com/sport/feeder/default.rss" },
-    "entertainment": { "name": "Entertainment", "nav": true, "featured": true, "url": "https://www.thehindu.com/entertainment/feeder/default.rss" },
-    "auto": { "name": "Motoring", "nav": true, "url": "https://www.thehindu.com/life-and-style/motoring/feeder/default.rss" },
-    "fashion": { "name": "Fashion", "nav": true, "url": "https://www.thehindu.com/life-and-style/fashion/feeder/default.rss" },
-    "editorial": { "name": "Editorial", "featured": true, "nav": true, "url": "https://www.thehindu.com/opinion/editorial/feeder/default.rss" },
-    "economy": { "name": "Economy", "featured": true, "nav": true, "url": "https://www.thehindu.com/business/Economy/feeder/default.rss" },
-    "news": { "name": "News", "featured": true, "url": "https://www.thehindu.com/news/feeder/default.rss" },
-    "india": { "name": "India", "url": "https://www.thehindu.com/news/national/feeder/default.rss" },
-    "science": { "name": "Science", "url": "https://www.thehindu.com/sci-tech/science/feeder/default.rss" },
-    "national": { "url": "https://www.thehindu.com/news/national/feeder/default.rss", "name": "India" },
-    "international": { "url": "https://www.thehindu.com/news/international/feeder/default.rss", "name": "World" },
-    "states": { "url": "https://www.thehindu.com/news/states/feeder/default.rss", "name": "States" },
-    "cities": { "url": "https://www.thehindu.com/news/cities/feeder/default.rss", "name": "Cities" },
-    "cartoon": { "url": "https://www.thehindu.com/opinion/cartoon/feeder/default.rss", "name": "Cartoon" },
-    "columns": { "url": "https://www.thehindu.com/opinion/columns/feeder/default.rss", "name": "Columns" },
-    "op-ed": { "url": "https://www.thehindu.com/opinion/op-ed/feeder/default.rss", "name": "Comment" },
-    "interview": { "url": "https://www.thehindu.com/opinion/interview/feeder/default.rss", "name": "Interview" },
-    "lead": { "url": "https://www.thehindu.com/opinion/lead/feeder/default.rss", "name": "Lead" },
-    "letters": { "url": "https://www.thehindu.com/opinion/letters/feeder/default.rss", "name": "Letters" },
-    "open-page": { "url": "https://www.thehindu.com/opinion/open-page/feeder/default.rss", "name": "Open Page" },
-    "readers-editor": { "url": "https://www.thehindu.com/opinion/Readers-Editor/feeder/default.rss", "name": "Readers' Editor" },
-    "corrections-clarifications": { "url": "https://www.thehindu.com/opinion/Readers-Editor/corrections-and-clarifications/feeder/default.rss", "name": "Corrections & Clarifications" },
-    "agri-business": { "url": "https://www.thehindu.com/business/agri-business/feeder/default.rss", "name": "Agri-Business" },
-    "industry": { "url": "https://www.thehindu.com/business/Industry/feeder/default.rss", "name": "Industry" },
-    "markets": { "url": "https://www.thehindu.com/business/markets/feeder/default.rss", "name": "Markets" },
-    "budget": { "url": "https://www.thehindu.com/business/budget/feeder/default.rss", "name": "Budget" },
-    "football": { "url": "https://www.thehindu.com/sport/football/feeder/default.rss", "name": "Football" },
-    "hockey": { "url": "https://www.thehindu.com/sport/hockey/feeder/default.rss", "name": "Hockey" },
-    "tennis": { "url": "https://www.thehindu.com/sport/tennis/feeder/default.rss", "name": "Tennis" },
-    "athletics": { "url": "https://www.thehindu.com/sport/athletics/feeder/default.rss", "name": "Athletics" },
-    "motorsport": { "url": "https://www.thehindu.com/sport/motorsport/feeder/default.rss", "name": "Motorsport" },
-    "races": { "url": "https://www.thehindu.com/sport/races/feeder/default.rss", "name": "Races" },
-    "other-sports": { "url": "https://www.thehindu.com/sport/other-sports/feeder/default.rss", "name": "Other Sports" },
-    "cricket": { "url": "https://www.thehindu.com/sport/cricket/feeder/default.rss", "name": "Cricket" },
-    "art": { "url": "https://www.thehindu.com/entertainment/art/feeder/default.rss", "name": "Art" },
-    "dance": { "url": "https://www.thehindu.com/entertainment/dance/feeder/default.rss", "name": "Dance" },
-    "movies": { "url": "https://www.thehindu.com/entertainment/movies/feeder/default.rss", "name": "Movies" },
-    "music": { "url": "https://www.thehindu.com/entertainment/music/feeder/default.rss", "name": "Music" },
-    "reviews": { "url": "https://www.thehindu.com/entertainment/reviews/feeder/default.rss", "name": "Reviews" },
-    "theatre": { "url": "https://www.thehindu.com/entertainment/theatre/feeder/default.rss", "name": "Theatre" },
-    "fitness": { "url": "https://www.thehindu.com/life-and-style/fitness/feeder/default.rss", "name": "Fitness" },
-    "food": { "url": "https://www.thehindu.com/life-and-style/food/feeder/default.rss", "name": "Food" },
-    "motoring": { "url": "https://www.thehindu.com/life-and-style/motoring/feeder/default.rss", "name": "Motoring" },
-    "travel": { "url": "https://www.thehindu.com/life-and-style/travel/feeder/default.rss", "name": "Travel" },
-    "homes-and-gardens": { "url": "https://www.thehindu.com/life-and-style/homes-and-gardens/feeder/default.rss", "name": "Homes and gardens" },
-    "luxury": { "url": "https://www.thehindu.com/life-and-style/luxury/feeder/default.rss", "name": "Luxury" }
+    "home": {
+      "name": "Home",
+      "url": "https://www.thehindu.com/feeder/default.rss"
+    },
+    "business": {
+      "name": "Business",
+      "featured": true,
+      "nav": true,
+      "url": "https://www.thehindu.com/business/feeder/default.rss"
+    },
+    "opinion": {
+      "name": "Opinion",
+      "featured": true,
+      "nav": true,
+      "url": "https://www.thehindu.com/opinion/feeder/default.rss"
+    },
+    "world": {
+      "name": "World",
+      "featured": true,
+      "nav": true,
+      "url": "https://www.thehindu.com/news/international/feeder/default.rss"
+    },
+    "sports": {
+      "name": "Sports",
+      "featured": true,
+      "nav": true,
+      "url": "https://www.thehindu.com/sport/feeder/default.rss"
+    },
+    "entertainment": {
+      "name": "Entertainment",
+      "nav": true,
+      "featured": true,
+      "url": "https://www.thehindu.com/entertainment/feeder/default.rss"
+    },
+    "auto": {
+      "name": "Motoring",
+      "nav": true,
+      "url": "https://www.thehindu.com/life-and-style/motoring/feeder/default.rss"
+    },
+    "fashion": {
+      "name": "Fashion",
+      "nav": true,
+      "url": "https://www.thehindu.com/life-and-style/fashion/feeder/default.rss"
+    },
+    "editorial": {
+      "name": "Editorial",
+      "featured": true,
+      "nav": true,
+      "url": "https://www.thehindu.com/opinion/editorial/feeder/default.rss"
+    },
+    "economy": {
+      "name": "Economy",
+      "featured": true,
+      "nav": true,
+      "url": "https://www.thehindu.com/business/Economy/feeder/default.rss"
+    },
+    "news": {
+      "name": "News",
+      "featured": true,
+      "url": "https://www.thehindu.com/news/feeder/default.rss"
+    },
+    "india": {
+      "name": "India",
+      "url": "https://www.thehindu.com/news/national/feeder/default.rss"
+    },
+    "science": {
+      "name": "Science",
+      "url": "https://www.thehindu.com/sci-tech/science/feeder/default.rss"
+    },
+    "national": {
+      "url": "https://www.thehindu.com/news/national/feeder/default.rss",
+      "name": "India"
+    },
+    "international": {
+      "url": "https://www.thehindu.com/news/international/feeder/default.rss",
+      "name": "World"
+    },
+    "states": {
+      "url": "https://www.thehindu.com/news/states/feeder/default.rss",
+      "name": "States"
+    },
+    "cities": {
+      "url": "https://www.thehindu.com/news/cities/feeder/default.rss",
+      "name": "Cities"
+    },
+    "cartoon": {
+      "url": "https://www.thehindu.com/opinion/cartoon/feeder/default.rss",
+      "name": "Cartoon"
+    },
+    "columns": {
+      "url": "https://www.thehindu.com/opinion/columns/feeder/default.rss",
+      "name": "Columns"
+    },
+    "op-ed": {
+      "url": "https://www.thehindu.com/opinion/op-ed/feeder/default.rss",
+      "name": "Comment"
+    },
+    "interview": {
+      "url": "https://www.thehindu.com/opinion/interview/feeder/default.rss",
+      "name": "Interview"
+    },
+    "lead": {
+      "url": "https://www.thehindu.com/opinion/lead/feeder/default.rss",
+      "name": "Lead"
+    },
+    "letters": {
+      "url": "https://www.thehindu.com/opinion/letters/feeder/default.rss",
+      "name": "Letters"
+    },
+    "open-page": {
+      "url": "https://www.thehindu.com/opinion/open-page/feeder/default.rss",
+      "name": "Open Page"
+    },
+    "readers-editor": {
+      "url": "https://www.thehindu.com/opinion/Readers-Editor/feeder/default.rss",
+      "name": "Readers' Editor"
+    },
+    "corrections-clarifications": {
+      "url": "https://www.thehindu.com/opinion/Readers-Editor/corrections-and-clarifications/feeder/default.rss",
+      "name": "Corrections & Clarifications"
+    },
+    "agri-business": {
+      "url": "https://www.thehindu.com/business/agri-business/feeder/default.rss",
+      "name": "Agri-Business"
+    },
+    "industry": {
+      "url": "https://www.thehindu.com/business/Industry/feeder/default.rss",
+      "name": "Industry"
+    },
+    "markets": {
+      "url": "https://www.thehindu.com/business/markets/feeder/default.rss",
+      "name": "Markets"
+    },
+    "budget": {
+      "url": "https://www.thehindu.com/business/budget/feeder/default.rss",
+      "name": "Budget"
+    },
+    "football": {
+      "url": "https://www.thehindu.com/sport/football/feeder/default.rss",
+      "name": "Football"
+    },
+    "hockey": {
+      "url": "https://www.thehindu.com/sport/hockey/feeder/default.rss",
+      "name": "Hockey"
+    },
+    "tennis": {
+      "url": "https://www.thehindu.com/sport/tennis/feeder/default.rss",
+      "name": "Tennis"
+    },
+    "athletics": {
+      "url": "https://www.thehindu.com/sport/athletics/feeder/default.rss",
+      "name": "Athletics"
+    },
+    "motorsport": {
+      "url": "https://www.thehindu.com/sport/motorsport/feeder/default.rss",
+      "name": "Motorsport"
+    },
+    "races": {
+      "url": "https://www.thehindu.com/sport/races/feeder/default.rss",
+      "name": "Races"
+    },
+    "other-sports": {
+      "url": "https://www.thehindu.com/sport/other-sports/feeder/default.rss",
+      "name": "Other Sports"
+    },
+    "cricket": {
+      "url": "https://www.thehindu.com/sport/cricket/feeder/default.rss",
+      "name": "Cricket"
+    },
+    "art": {
+      "url": "https://www.thehindu.com/entertainment/art/feeder/default.rss",
+      "name": "Art"
+    },
+    "dance": {
+      "url": "https://www.thehindu.com/entertainment/dance/feeder/default.rss",
+      "name": "Dance"
+    },
+    "movies": {
+      "url": "https://www.thehindu.com/entertainment/movies/feeder/default.rss",
+      "name": "Movies"
+    },
+    "music": {
+      "url": "https://www.thehindu.com/entertainment/music/feeder/default.rss",
+      "name": "Music"
+    },
+    "reviews": {
+      "url": "https://www.thehindu.com/entertainment/reviews/feeder/default.rss",
+      "name": "Reviews"
+    },
+    "theatre": {
+      "url": "https://www.thehindu.com/entertainment/theatre/feeder/default.rss",
+      "name": "Theatre"
+    },
+    "fitness": {
+      "url": "https://www.thehindu.com/life-and-style/fitness/feeder/default.rss",
+      "name": "Fitness"
+    },
+    "food": {
+      "url": "https://www.thehindu.com/life-and-style/food/feeder/default.rss",
+      "name": "Food"
+    },
+    "motoring": {
+      "url": "https://www.thehindu.com/life-and-style/motoring/feeder/default.rss",
+      "name": "Motoring"
+    },
+    "travel": {
+      "url": "https://www.thehindu.com/life-and-style/travel/feeder/default.rss",
+      "name": "Travel"
+    },
+    "homes-and-gardens": {
+      "url": "https://www.thehindu.com/life-and-style/homes-and-gardens/feeder/default.rss",
+      "name": "Homes and gardens"
+    },
+    "luxury": {
+      "url": "https://www.thehindu.com/life-and-style/luxury/feeder/default.rss",
+      "name": "Luxury"
+    }
   }
 }
