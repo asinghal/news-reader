@@ -191,7 +191,7 @@ body {
     display: none;
     background-color: transparent;
     border: none;
-    color: #fff;
+    color: inherit;
     font-size: 1.5em;
     cursor: pointer;
 }
